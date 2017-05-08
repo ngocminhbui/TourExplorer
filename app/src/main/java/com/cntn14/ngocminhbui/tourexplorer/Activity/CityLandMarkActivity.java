@@ -53,6 +53,7 @@ public class CityLandMarkActivity extends AppCompatActivity {
             ViewAllLandmarkActivity.list_landmark = this.list_landmark;
 
             startActivity(intent);
+
             return true;
         } else if (id == R.id.action_takepicture) {
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

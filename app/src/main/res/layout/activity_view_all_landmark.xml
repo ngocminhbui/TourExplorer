@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/rv_map_landmarks"
+        android:layout_gravity="bottom"
         >
 
 
