@@ -54,7 +54,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.TabPagesActivity" />
-        <activity android:name=".Activity.CityLandMarkActivity" />
+        <activity android:name=".Activity.CityLandMarkActivity"
+            android:theme="@style/MyMaterialTheme"/>
         <activity
             android:name=".Places.ui.ActivityList.AboutScreen"
             android:configChanges="orientation|keyboardHidden"

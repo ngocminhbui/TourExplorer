@@ -6,6 +6,11 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +18,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,30 +31,27 @@ import android.widget.Toast;
 import com.cntn14.ngocminhbui.tourexplorer.ARDirection.ARDirection;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.ListLandMarkAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.ListLandmarkFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.OneFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class CityLandMarkActivity extends AppCompatActivity {
-    protected static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 9968;
-    private Uri imageUri;
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
     RecyclerView rv_landmarks;
     ArrayList<Landmark> list_landmark = new ArrayList<Landmark>();
 
-    private ListView mDrawerList;
     private ArrayAdapter<String> mAdapter;
-    private ActionBarDrawerToggle mDrawerToggle;
-    private DrawerLayout mDrawerLayout;
     private String mActivityTitle;
+
+    private Toolbar toolbar;
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -75,119 +78,42 @@ public class CityLandMarkActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-            super.onActivityResult(requestCode, resultCode, data);
-
-            if (resultCode == RESULT_OK) {
-                if (requestCode == CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE) {
-
-                    //use imageUri here to access the image
-
-                    Bundle extras = data.getExtras();
-
-                    Log.e("URI",imageUri.toString());
-
-                    Bitmap bmp = (Bitmap) extras.get("data");
-
-                    // here you will get the image as bitmap
-
-
-                }
-                else if (resultCode == RESULT_CANCELED) {
-                    Toast.makeText(this, "Picture was not taken", Toast.LENGTH_SHORT);
-                }
-            }
-
-    }
-
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city_land_mark);
 
-        mDrawerList = (ListView)findViewById(R.id.navList);
 
-        addDrawerItems();
-        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position==0){
+        toolbar = (Toolbar) findViewById(R.id.activity_main_toolbar);
+        setSupportActionBar(toolbar);
 
-                    Intent intent = new Intent(getApplicationContext(), ImageGalleryActivity.class);
-                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-                    getApplicationContext().startActivity(intent);
+        viewPager = (ViewPager) findViewById(R.id.activity_main_viewpager);
+        setupViewPager(viewPager);
 
-                }
-                else if (position==1){
+        tabLayout = (TabLayout) findViewById(R.id.activity_main_tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
-
-                }else if (position==2) {
-                    //about
-                }
-            }
-        });
+        /*
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
-
-        setupDrawer();
 
         PrepareData();
 
         BindComponents();
-
+        */
 
     }
-    private void addDrawerItems() {
-        String[] osArray = { "View Image Gallery", "App setting", "About" };
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, osArray);
-        mDrawerList.setAdapter(mAdapter);
-    }
-    @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        // Sync the toggle state after onRestoreInstanceState has occurred.
-        mDrawerToggle.syncState();
-    }
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-        mDrawerToggle.onConfigurationChanged(newConfig);
-    }
-
-    private void setupDrawer() {
-        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, R.string.drawer_open, R.string.drawer_close) {
-
-            /** Called when a drawer has settled in a completely open state. */
-            public void onDrawerOpened(View drawerView) {
-                super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Select Action");
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-
-            /** Called when a drawer has settled in a completely closed state. */
-            public void onDrawerClosed(View view) {
-                super.onDrawerClosed(view);
-                getSupportActionBar().setTitle(mActivityTitle);
-                invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
-            }
-        };
-
-        mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.addDrawerListener(mDrawerToggle);
-    }
+    /*
     private void PrepareData() {
 
         list_landmark = Database.getLandmarks(this);
 
     }
-
     private void BindComponents() {
         rv_landmarks = (RecyclerView) findViewById(R.id.rv_landmarks);
 
@@ -199,8 +125,45 @@ public class CityLandMarkActivity extends AppCompatActivity {
         rv_landmarks.setAdapter(lv_landmarks_adapter);
 
 
+    }
+    */
 
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        adapter.addFragment(new ListLandmarkFragment(), "ONE");
+        adapter.addFragment(new ListLandmarkFragment(), "TWO");
+        adapter.addFragment(new ListLandmarkFragment(), "THREE");
+        viewPager.setAdapter(adapter);
     }
 
+    class ViewPagerAdapter extends FragmentPagerAdapter {
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
+
+        public ViewPagerAdapter(FragmentManager manager) {
+            super(manager);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            return mFragmentList.get(position);
+        }
+
+        @Override
+        public int getCount() {
+            return mFragmentList.size();
+        }
+
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return mFragmentTitleList.get(position);
+        }
+    }
 
 }
