@@ -1,31 +1,37 @@
 package com.cntn14.ngocminhbui.tourexplorer.Model;
 
-import android.graphics.Bitmap;
-import android.os.Parcelable;
-
 import com.google.android.gms.maps.model.LatLng;
 
-import java.io.Serializable;
-
 /**
- * Created by ngocminh on 5/6/17.
+ * Created by ngocminh on 5/19/17.
  */
-public class Landmark implements Serializable {
-    public final LatLng m_latLng;
-    public final String m_img;
-    public final double m_star;
-    public final String m_hour;
-    public final String m_distance;
-    public String m_name = "Nha tho duc ba sai gon";
 
-    public Bitmap m_bm;
+public class Landmark {
+    public int ID;
+    public String Name;
+    public String Url;
+    public String Address;
+    public double Lat;
+    public double Long;
+    public String Hour;
+    public String Phone;
+    public String ShortDescription;
+    public String Description;
+    public String JSON;
+    public LatLng LatLng;
 
-    public Landmark(String name, LatLng latLng, String img, int star, String hour, String distance) {
-        m_name=name;
-        m_latLng = latLng;
-        m_img=img;
-        m_star=star;
-        m_hour=hour;
-        m_distance=distance;
+    public Landmark(int ID, String name, String url, String address, double lat, double aLong, String hour, String phone, String shortDescription, String description, String JSON) {
+        this.ID = ID;
+        Name = name;
+        Url = url;
+        Address = address;
+        Lat = lat;
+        Long = aLong;
+        Hour = hour;
+        Phone = phone;
+        ShortDescription = shortDescription;
+        Description = description;
+        this.JSON = JSON;
+        LatLng = new LatLng(Lat,Long);
     }
 }
