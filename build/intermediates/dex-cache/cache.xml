@@ -12,12 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/ngocminh/.android/build-cache/46eaec0426c1c348d7e3f2cbb9fcf6bcf3c4eeda/output/jars/classes.jar"
+        jar="/home/ngocminh/Desktop/TourExplorer/app/libs/slideDateTimePicker/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="393eb85d65baa2c3702efdf699832498f8b51bf1">
-        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bbb353b50500562fb1f15954cc7156cd7d7eb93f/classes.dex" />
+        sha1="64ac7b205bedc7239d0a30edc306620f3739956e">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/4/classes_51f0bf7d89fe5b4c7898a6ba9bc1c07a774d3939/classes.dex" />
     </item>
 
 </items>

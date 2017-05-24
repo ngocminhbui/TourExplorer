@@ -3,6 +3,7 @@ package com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -16,14 +17,18 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,6 +48,8 @@ import com.cntn14.ngocminhbui.tourexplorer.Model.Image;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.github.ivbaranov.mfb.MaterialFavoriteButton;
+import com.github.jjobes.slidedatetimepicker.SlideDateTimeListener;
+import com.github.jjobes.slidedatetimepicker.SlideDateTimePicker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -58,6 +65,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -324,6 +332,28 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
                 landmark.m_favourite=favorite;
             }
         });
+
+
+        final SlideDateTimeListener dateTimeListener = new SlideDateTimeListener() {
+            @Override
+            public void onDateTimeSet(Date date) {
+                Toast.makeText(BottomSheetTest.this,"DI",Toast.LENGTH_SHORT).show();
+            }
+        };
+
+        ImageButton ib_bottomsheet_addtocalendar = (ImageButton) findViewById(R.id.ib_bottomsheet_addtocalendar);
+        ib_bottomsheet_addtocalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               new SlideDateTimePicker.Builder(getSupportFragmentManager())
+                       .setListener(dateTimeListener)
+                       .setInitialDate(new Date())
+                       .build()
+                       .show();
+            }
+        });
+
+
     }
 
     @Override

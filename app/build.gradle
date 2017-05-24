@@ -49,5 +49,6 @@ dependencies {
     compile 'com.github.ivbaranov:materialfavoritebutton:0.1.4'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.github.alamkanak:android-week-view:1.2.6'
+    compile project('libs:slideDateTimePicker')
     testCompile 'junit:junit:4.12'
 }
