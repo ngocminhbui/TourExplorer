@@ -29,10 +29,12 @@ public class ListLandmarkFragment extends Fragment {
 
     public ListLandmarkFragment() {
         // Required empty public constructor
+
     }
 
-
-
+    public void setList_landmark(ArrayList<Landmark> list_landmark) {
+        this.list_landmark = list_landmark;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,7 +50,6 @@ public class ListLandmarkFragment extends Fragment {
 
         View v = getView();
 
-        list_landmark = Database.getLandmarks(getActivity());
 
 
         rv_landmarks = (RecyclerView) v.findViewById(R.id.rv_landmarks);

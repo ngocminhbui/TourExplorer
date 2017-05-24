@@ -1,7 +1,10 @@
 package com.cntn14.ngocminhbui.tourexplorer.Activity;
 
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +19,7 @@ import android.widget.ListView;
 
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.ListLandMarkAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.ListLandmarkFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
@@ -34,21 +38,15 @@ public class ViewFavouritePlaceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_city_land_mark);
+        setContentView(R.layout.activity_view_favourite_place);
 
-
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-        mActivityTitle = getTitle().toString();
-
-
-        PrepareData();
-
-        BindComponents();
-
-
+        //favourite_fragment_container
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        ListLandmarkFragment fragment = new ListLandmarkFragment();
+        fragment.setList_landmark(Database.getFavouriteLandmark(this));
+        fragmentTransaction.add(R.id.favourite_fragment_container, fragment);
+        fragmentTransaction.commit();
     }
 
 

@@ -21,6 +21,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -94,46 +95,52 @@ public class CityLandMarkActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.activity_main_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        /*
-
-
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-        mActivityTitle = getTitle().toString();
-
-        PrepareData();
-
-        BindComponents();
-        */
 
     }
-    /*
-    private void PrepareData() {
 
-        list_landmark = Database.getLandmarks(this);
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
     }
-    private void BindComponents() {
-        rv_landmarks = (RecyclerView) findViewById(R.id.rv_landmarks);
-
-        ListLandMarkAdapter lv_landmarks_adapter = new ListLandMarkAdapter(this,list_landmark);
-
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        rv_landmarks.setLayoutManager(mLayoutManager);
-        rv_landmarks.setItemAnimator(new DefaultItemAnimator());
-        rv_landmarks.setAdapter(lv_landmarks_adapter);
-
-
-    }
-    */
 
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new ListLandmarkFragment(), "ONE");
-        adapter.addFragment(new ListLandmarkFragment(), "TWO");
-        adapter.addFragment(new ListLandmarkFragment(), "THREE");
+
+
+        list_landmark = Database.getLandmarks(this);
+
+        ListLandmarkFragment allList = new ListLandmarkFragment();
+        allList.setList_landmark(list_landmark);
+
+        ListLandmarkFragment museumList = new ListLandmarkFragment();
+        museumList.setList_landmark(list_landmark);
+
+        ListLandmarkFragment parkList = new ListLandmarkFragment();
+        parkList.setList_landmark(list_landmark);
+
+        ListLandmarkFragment resort = new ListLandmarkFragment();
+        resort.setList_landmark(list_landmark);
+
+
+        ListLandmarkFragment restaurant = new ListLandmarkFragment();
+        restaurant.setList_landmark(list_landmark);
+
+        ListLandmarkFragment other = new ListLandmarkFragment();
+        other.setList_landmark(list_landmark);
+
+
+
+        adapter.addFragment(allList, "Tất cả");
+        adapter.addFragment(museumList, "Bảo tàng");
+        adapter.addFragment(parkList, "Công viên");
+        adapter.addFragment(resort, "Khu du lịch");
+        adapter.addFragment(restaurant, "Nhà hàng");
+        adapter.addFragment(other, "Khác");
+
+
         viewPager.setAdapter(adapter);
     }
 

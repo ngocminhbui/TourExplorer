@@ -17,7 +17,7 @@
         android:id="@+id/action_recognition"
         android:orderInCategory="200"
         android:title="Image Recognition"
-        android:icon="@drawable/ic_photo_camera_black_36dp"
+        android:icon="@drawable/ic_augmentedreality"
         app:showAsAction="ifRoom"
         ></item>
 
