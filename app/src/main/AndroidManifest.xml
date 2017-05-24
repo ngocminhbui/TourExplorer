@@ -81,7 +81,9 @@
         <activity android:name=".ARDirection.ARDirection" />
         <activity android:name=".Activity.AppSettingActivity" />
         <activity android:name=".Activity.ViewFavouritePlaceActivity" />
-        <activity android:name=".Activity.TripPlanner.ViewCalendarActivity"></activity>
+        <activity android:name=".Activity.TripPlanner.ViewCalendarActivity" />
+        <activity android:name=".Activity.NeedToKnowActivity.NeedToKnowActivity"
+            android:theme="@style/MyMaterialTheme"></activity>
     </application>
 
 </manifest>

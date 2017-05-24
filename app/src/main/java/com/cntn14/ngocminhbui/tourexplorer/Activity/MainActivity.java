@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
+import com.cntn14.ngocminhbui.tourexplorer.Activity.NeedToKnowActivity.NeedToKnowActivity;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner.ViewCalendarActivity;
 import com.cntn14.ngocminhbui.tourexplorer.Database.SQLiteDataController;
 import com.cntn14.ngocminhbui.tourexplorer.Database.SQLiteLandmark;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         CardView btnListLandmark = (CardView)findViewById(R.id.cv_activity_main_actionListLandmark);
         CardView btnFavourite = (CardView)findViewById(R.id.cv_activity_main_actionListFavourite);
         CardView btnSchedule = (CardView)findViewById(R.id.cv_activity_main_actionCalendar);
+        CardView cv_activity_main_actionneedtoknow = (CardView)findViewById(R.id.cv_activity_main_actionneedtoknow);
         btnListLandmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +51,15 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+        cv_activity_main_actionneedtoknow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NeedToKnowActivity.class);
+                MainActivity.this.startActivity(intent);
+            }
+        });
     }
+
 
     private void createDB() {
         SQLiteDataController sql = new SQLiteDataController(this);

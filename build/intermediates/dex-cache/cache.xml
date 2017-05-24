@@ -3,6 +3,357 @@
 
     <item
         is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/80795a37bfacf66c07bc8ba5713ab0d3f80a448b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="597d0d34e15e713c486e8f4ccf739f0c7d05bde4">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2cdb494d9c6629c0dfd79812ba1163aff03ae5a9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/67139ffa023b0f034bcb6af9416ae784f9309328/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f46a6b64d0472c99b96839ba1a4961389731920/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/211c389d35e78975a562f62fe23d4303a28c2876/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="688809418e4c2b5014a028c02708d6aeaba466ff">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9d47e1819cf349daff25d3e068a2b04c8d3fe9f3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/1acf95c90647f387a74f9b6a17a252249c0ec116/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a75030f7a3f5f96a15acdab44829bed93154d09f">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd7c92d1bd32e5fca4b67bd26227371167bc7ba4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/7df0d6cbeb44e9cf097c90907359a9bf7d8191da/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="32aa1b2a2f68f455403d10d41d8ded37c9812f11">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_36205afeb8cdf727552534c148a2944e196b9f69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/565419dce93d6d53738afe8ac5a2b1691d473edb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="183e4fb7cf95f4fa54963cfcdaf0f4d7e2397bad">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5ac300da2c53662d0819b68b7f3ef398905143cb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/209bb02bef5a11178975af82a407f675b4e9d316/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3908f92d781a9eaf6ba73ea9648c959dfe33752f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/623fa53c535be7717533ad7f5fbd5972c5f3cf2c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa6a6e385297077a344e0bb95ab6c22f22119261">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f32ac73fc9e9332eb2aee6f4f4372faf1f4899e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/23dc6f509a22b59d88a561f9ef213ffa0639b12b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d72eb1ceff1b0bac4916088eb44bb93f86b1265c">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc7072ebabfab18a909dc6fd0ca07497662459e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/8ad2aa1aaad6c3dc1c899a735b5584e3b8bf945a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98ac18f891a8279ae57c4771cbf4a2a65f95b04c">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a0384995522cc22eb981f971f9b11780f4b5ce5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/cce16972b73988b88678b3085597843e6c333de2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8748e15968514ff1708deb3bb7f0c17623e50bbb">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7490b986d9e1845256be61282317f40d38ef5343/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/f240c36ce09e4cbf6656377783108fbcb46703f6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="54933c89f90a872aa342004e82b23e776fe12736">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e77bc15f5657c68261c4fe4c0ab67ee1a59715b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/cd7c1232436c7493295234a17b604d7ec1a743e1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b8d1a53648f7ecfe9e7bf0baf9ca657c5a1ff91">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e6c809ae3c7d733fb63c2e784c52872228455b68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/d6eb1902a431de86a508f602d4301f239b61e195/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cba8868595f6aaff54cf7d1798591108cf5611c">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15729c2369f477a9ed28e5bf5b9bc756c3ebcb6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/fc72ad7660404ba83d5f32b359715eb21c29a34b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c76804333008c855433cad5cfd1256e86045e97b">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0f10c177dab4c10735cf7f8c48c69cae68472cd7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/c8f2d970cdad4d253eebbd57bc2655907890f7bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43df709c95f6b0501b3adbc7da992b6a69a03214">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d1c6eb6cca04c056e6c74fdafb315ef47f04d156/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/3eadee36b20b432c7d49da8d5cc3274d5772f6ea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2ed7ba48801a0a361727833ade3b6cf096968cc0">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7866cce8541412240ef5090b5b8e608b44e77c0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/2eb94ed234fc7c307ef20517ec8b8aec1be2902e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="90236fba9ac4dfb1f4196e231aab964522143ef6">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_236fcd41c17cf214033ee5c3a3c0d6d6abafe731/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/1f422c3660351979b5b2ef63fbc0132df3226722/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b50fe5288bba9d1635ba619bd3c308319205543e">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9139363402372d9d96b0675f16affd45c93c5d3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/365bf4c3ed4627515d9df2c9889f47d14b6918c7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="80ecaefc1035fde747999e4c20e18d207363efa2">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc8e9238220aee361fc5972897a4a98f00f3df7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/d131d79f0b035439a7c5d53fd6f1c29c6004eb87/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_87a0a1ff5e2f7bac73cb0ed9dd99480468885f40/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/ccee1488a0503ae32e5f5670733f00e4262adcd4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4eeba61bbc47e49a5fbdfd9aa21af5d10bf4df7c">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cd5590a0c58b7cf8a113543646c9d4029c14805c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/0fdc79f37d8c59db5e10b65e45df0540adcbcaca/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6c8a4af7cf76d958c76ed7682f39e4b386b69305">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_50b0ec0fdc7ec98cf3234b0a3fedf77fbc93e7b5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/c66b130033fab96d88b8b9100e9f2d2632ddc1bd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fe159787dd4c4bc9ed6a9d4f7430e9af1f3516c8">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_19e03f6ca3191ca1895814de9d7bb4142a66a4fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/b30e2cb5c0fe83bcb6bf3e7547a73ff9f05c6445/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93094dbb2af50e23339620bebd7b4b6161410edb">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c08ad69a0c4fbca08ab02b3908a762000c0b464f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/d4719faee6ebb057dd891ea6afb4c6f103d889e6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d66b8668122393a15c90471c5c974c25439d193a">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a0249b0ea834ace61f080041c2bac53942a0ef8e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/682f882c659214ef570b3f8d1f852149b18e4205/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02e70fe04e0767ccfa16745b3398816d1171f0ad">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f12c3c04f8fcb32f7eb12e693a6f85866bb9ac1b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/11bd1a689d571db3e93a9a8f8645637b698f56bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fdf15d202000492aefe43092b21af5332df0178">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_036d67f42dcd4de018c55ef3029d70630a7f7ee2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/931d07d3805112759d8f533917b2ef7b8b6dcf14/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="acc7a846f0bc56ecccda535fc919fd338b2b3e2c">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ccbfe7d0e1f204d55bf37e84320599500713747b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/4c439e296fe09b342291810684844b666afbad4e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b8ad09b76c4ffaedf443ca54bc2418760870689">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e2519f117988f8da54cac017af4a8b3abb1cfb3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/504bed0defaccfeb1ceb6cc86812f39715a8fae9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0e23941db151e67886844de6586e180bb2b860ad">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1c2c5dcec91a539f81addf58f9a32595ace208f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/52211b68d6d1c741d76d792874a2dfa3b3a6cab2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="287051610dd01cc6eeaed7fc689712c31ad1ff70">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f6da9431a90df59d6d3d9b4c5ee2009e68061e48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/3227ec1af70b5922ea993e0def71046c273fa9ce/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c01990d0a9bbc67f4c2b9610c1170046c2e37b3e">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_706eae394c65083e460b880d40d6ed69a20c55de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/f7ad9e350e4d6df3194e76ce54290dc7348252d0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_71357268c88e97ae5f11e2d3420b320f2d9ce5c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/07e7834eb81df834b289543174f22ec9fa196b8a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d2d27edb6fbc12fdf28008cdff920e66f08cf159">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d6e09c01bc597278fb3c4828b777e948bbe053f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/6398ff6e3c72419634ce795188712120302c6d89/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b2b4d3ecd541814f08200f8171def113095d5f39">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_922e5372c84eedda9298d79a6f3f1fcfe4603cd7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/0bbd5201d767a4e397665444d344da1c143e048f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="88ae4c6ceaeab7beca5e396e0698c6958e26a2d2">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3543a9d6ef3849d7be9d18933762bf117357df17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/e90407016c47ac0cb63d26bf85672cb0a8492817/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="657abe17c5ba58f5d24803ba303c6005b180897a">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fbff5840f9014c6f0a3b8d7f02aa89b20f82c358/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/3330cedd5edcd43d568ea7002d66689d879c4a12/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6d74229724fde1a88b560dd7ca23ab0b3fd4683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/ngocminh/Desktop/TourExplorer/app/libs/Vuforia.jar"
         jumboMode="false"
         optimize="true"
@@ -12,12 +363,93 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/4f848ceb3a46ca37468e1df662bbfb0beaa3625c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29e4e634375ab2ed25f8db5387b564c78980422a">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8a3af2918f16bb91bdafe545d1b6b0e7abb8429c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/af9308d6647f800e6d60cc22c007ad0b28d5a007/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="610ae6a6872d9718fc05e2c726758206bd367595">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e518653dc6d1b030b7f65b85e8eaaff337a131ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/f6e05790a1bab8c0aa9c2a3c85fc6e0b8ff9d4f2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dde643ce80b967f869e9b111255815ba4d391653">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_18071a553d351b21bc2bea42b43de3f5376ac84c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/8fa900411178e0430bd12d2c609b749e4e39634d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="29d9916bd9ad8406a53edbafbbce5e18943aa882">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95afd9aa4643796c4e422b0afb44ab4046618185/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/08924d6798f0d50f2b996674e3edad9d08696385/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff324c60b5f6c10283d1de9dd73b449f9de152ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/ngocminh/Desktop/TourExplorer/app/libs/slideDateTimePicker/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="64ac7b205bedc7239d0a30edc306620f3739956e">
         <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/4/classes_51f0bf7d89fe5b4c7898a6ba9bc1c07a774d3939/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/29e9c04a11a727a32eeba2ec24b8a75c02e94e34/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2188ba20a948ec6e7fa671b818c69d876d8bf32d">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5f852aaa64cbcb1605a7a0ccf629a9608b05a8fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/922e5f02285c7089b2c299f915b4399f1122a27a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b96a6b2aa37fb16ca3d82d78b3688b1ec10f888a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/16184792aab585ba101fed56d861bb282b951b0a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="701c58abf53f488bc5bb0162f1305a38a32fb5f1">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e60ad01a95889cc91659aa0119e5f3a803fa93d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/a569005960c0b70a2c4772e4c8e2d810059ee512/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9c8affe1f564ec0d063be68469d26e972455217">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_478e81f57cf9f836af6c54a2593f0505287d10b2/classes.dex" />
     </item>
 
 </items>
