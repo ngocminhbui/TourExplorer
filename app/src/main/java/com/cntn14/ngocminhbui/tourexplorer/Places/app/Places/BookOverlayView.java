@@ -7,7 +7,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.Places.app.Places;
+package com.cntn14.ngocminhbui.tourexplorer.Places.app.Places;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -18,7 +18,7 @@ import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nht.dtle.mtrip.R;
+import com.cntn14.ngocminhbui.tourexplorer.R;
 
 // Custom View with Book Overlay Data
 public class BookOverlayView extends RelativeLayout

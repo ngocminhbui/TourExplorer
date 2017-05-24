@@ -1,4 +1,4 @@
-package com.nht.dtle.mtrip;
+package com.cntn14.ngocminhbui.tourexplorer;
 
 import android.content.Context;
 import android.content.res.Configuration;

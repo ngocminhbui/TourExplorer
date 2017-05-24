@@ -1,4 +1,4 @@
-package com.nht.dtle.mtrip.Place;
+package com.cntn14.ngocminhbui.tourexplorer.Place;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -6,9 +6,9 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 import com.google.android.gms.maps.SupportMapFragment;
-import com.nht.dtle.mtrip.MapViewPager;
-import com.nht.dtle.mtrip.R;
-import com.nht.dtle.mtrip.Utils;
+import com.cntn14.ngocminhbui.tourexplorer.MapViewPager;
+import com.cntn14.ngocminhbui.tourexplorer.R;
+import com.cntn14.ngocminhbui.tourexplorer.Utils;
 
 public class PlaceActivity extends AppCompatActivity implements MapViewPager.Callback {
 

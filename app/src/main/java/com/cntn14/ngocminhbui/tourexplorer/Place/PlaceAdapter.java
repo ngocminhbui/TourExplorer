@@ -1,11 +1,11 @@
-package com.nht.dtle.mtrip.Place;
+package com.cntn14.ngocminhbui.tourexplorer.Place;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
-import com.nht.dtle.mtrip.MapViewPager;
+import com.cntn14.ngocminhbui.tourexplorer.MapViewPager;
 
 /**
  * Created by yoh on 5/7/17.

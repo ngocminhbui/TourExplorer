@@ -9,7 +9,7 @@ countries.
 ===============================================================================*/
 
 
-package com.nht.dtle.mtrip.SampleApplication;
+package com.cntn14.ngocminhbui.tourexplorer.SampleApplication;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -18,13 +18,13 @@ import android.os.Build;
 import android.util.Log;
 import android.view.WindowManager;
 
+import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.vuforia.CameraDevice;
 import com.vuforia.Device;
 import com.vuforia.INIT_FLAGS;
 import com.vuforia.State;
 import com.vuforia.Vuforia;
 import com.vuforia.Vuforia.UpdateCallbackInterface;
-import com.nht.dtle.mtrip.R;
 
 
 public class SampleApplicationSession implements UpdateCallbackInterface

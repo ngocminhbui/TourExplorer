@@ -7,13 +7,18 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.Places.app.Places;
+package com.cntn14.ngocminhbui.tourexplorer.Places.app.Places;
 
 import android.content.res.Configuration;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
 
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleAppRenderer;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleAppRendererControl;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationSession;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.SampleUtils;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.Texture;
 import com.vuforia.Device;
 import com.vuforia.Matrix34F;
 import com.vuforia.ObjectTracker;
@@ -24,11 +29,6 @@ import com.vuforia.Tool;
 import com.vuforia.TrackableResult;
 import com.vuforia.TrackerManager;
 import com.vuforia.Vuforia;
-import com.nht.dtle.mtrip.SampleApplication.SampleAppRenderer;
-import com.nht.dtle.mtrip.SampleApplication.SampleAppRendererControl;
-import com.nht.dtle.mtrip.SampleApplication.SampleApplicationSession;
-import com.nht.dtle.mtrip.SampleApplication.utils.SampleUtils;
-import com.nht.dtle.mtrip.SampleApplication.utils.Texture;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,4 +1,4 @@
-package com.nht.dtle.mtrip.ARHelper;
+package com.cntn14.ngocminhbui.tourexplorer.ARHelper;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -45,7 +45,7 @@ public class MyCurrentAzimuth implements SensorEventListener {
        // SensorManager.getRotationMatrixFromVector(rMat, event.values);
 
         //azimuthTo = (int) ( Math.toDegrees( SensorManager.getOrientation( rMat, orientation )[0] ) + 360 ) % 360;
-        azimuthTo = event.values[0] + 90;
+        azimuthTo = event.values[0];
         if (azimuthTo>360) azimuthTo-=360;
 
         mAzimuthListener.onAzimuthChanged(azimuthTo);

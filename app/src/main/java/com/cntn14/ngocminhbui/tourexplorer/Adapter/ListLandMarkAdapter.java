@@ -12,15 +12,16 @@ import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.BottomSheetTest;
 import com.cntn14.ngocminhbui.tourexplorer.Helper.DownloadImage;
 import com.cntn14.ngocminhbui.tourexplorer.Helper.OnTaskCompleted;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
-import com.google.android.gms.location.places.Place;
+import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by ngocminh on 5/6/17.
@@ -65,31 +66,42 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
     public void onBindViewHolder(final ViewHolder holder, final int position) {
 
         final Landmark lm = list_landmark.get(position);
-        holder.tv_activity_landmark_name.setText(lm.m_name);
-        holder.iv_activity_landmarkimg.setImageBitmap(lm.m_bm);
-        holder.rb_activity_landmarkscore.setRating((float) lm.m_star);
-        holder.tv_activity_landmarkhour.setText(lm.m_hour);
+        holder.tv_activity_landmark_name.setText(lm.Name);
+        holder.rb_activity_landmarkscore.setRating((float) lm.Rating);
+        holder.tv_activity_landmarkhour.setText(lm.Hour);
         holder.tv_activity_landmarkdistance.setText(lm.m_distance);
-        if(lm.m_bm == null){
-            new DownloadImage(context, new OnTaskCompleted() {
-                @Override
-                public void onTaskCompleted(Bitmap bm) {
-                    holder.iv_activity_landmarkimg.setImageBitmap(bm);
-                    lm.m_bm=bm;
-                }
-            }).execute(lm.m_img);
-        }
-        else{
-            holder.iv_activity_landmarkimg.setImageBitmap(lm.m_bm);
-        }
+        holder.tv_activity_landmark_description.setText(lm.ShortDescription);
 
-        holder.ib_activity_showdetail.setOnClickListener(new View.OnClickListener() {
+
+
+
+        Glide.with(context).load(lm.ImageURL)
+                .thumbnail(0.5f)
+                .crossFade()
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .into(holder.iv_activity_landmarkimg);
+
+
+
+        holder.iv_activity_landmarkimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PlaceDetailActivity.list_landmark = ListLandMarkAdapter.this.list_landmark;
-                PlaceDetailActivity.landmark=ListLandMarkAdapter.this.list_landmark.get(position);
-                Intent intent = new Intent(context, PlaceDetailActivity.class);
+
+
+                BottomSheetTest.list_landmark = ListLandMarkAdapter.this.list_landmark;
+                BottomSheetTest.landmark=ListLandMarkAdapter.this.list_landmark.get(position);
+                Intent intent = new Intent(context, BottomSheetTest.class);
                 context.startActivity(intent);
+            }
+        });
+
+
+        holder.mfb_activity_landmark_favourite.setFavorite(lm.m_favourite);
+
+        holder.mfb_activity_landmark_favourite.setOnFavoriteChangeListener(new MaterialFavoriteButton.OnFavoriteChangeListener() {
+            @Override
+            public void onFavoriteChanged(MaterialFavoriteButton buttonView, boolean favorite) {
+                lm.m_favourite = favorite;
             }
         });
 
@@ -106,6 +118,7 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
         public ImageButton ib_activity_seemore;
         public RatingBar rb_activity_landmarkscore;
         public ImageButton ib_activity_showdetail;
+        public MaterialFavoriteButton mfb_activity_landmark_favourite;
         public ViewHolder(View itemView) {
             super(itemView);
             tv_activity_landmark_name = (TextView) itemView.findViewById(R.id.tv_activity_landmarkname);
@@ -117,6 +130,7 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
             ib_activity_seemore = (ImageButton)itemView.findViewById(R.id.ib_activity_seemore);
             ib_activity_showdetail = (ImageButton)itemView.findViewById(R.id.ib_activity_showdetail);
             tv_activity_landmark_description.setVisibility(View.GONE);
+            mfb_activity_landmark_favourite = (MaterialFavoriteButton)itemView.findViewById(R.id.mfb_activity_landmark_favourite);
         }
     }
 }

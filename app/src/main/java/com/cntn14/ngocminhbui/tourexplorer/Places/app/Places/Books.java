@@ -8,7 +8,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.Places.app.Places;
+package com.cntn14.ngocminhbui.tourexplorer.Places.app.Places;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -43,7 +43,15 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nht.dtle.mtrip.PlaceDetail.PlaceDetailActiviy;
+//import com.cntn14.ngocminhbui.tourexplorer.PlaceDetail.PlaceDetailActiviy;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
+import com.cntn14.ngocminhbui.tourexplorer.R;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationControl;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationException;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationSession;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.LoadingDialogHandler;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.SampleApplicationGLView;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.Texture;
 import com.vuforia.CameraDevice;
 import com.vuforia.ObjectTracker;
 import com.vuforia.State;
@@ -53,13 +61,6 @@ import com.vuforia.Trackable;
 import com.vuforia.Tracker;
 import com.vuforia.TrackerManager;
 import com.vuforia.Vuforia;
-import com.nht.dtle.mtrip.R;
-import com.nht.dtle.mtrip.SampleApplication.SampleApplicationControl;
-import com.nht.dtle.mtrip.SampleApplication.SampleApplicationException;
-import com.nht.dtle.mtrip.SampleApplication.SampleApplicationSession;
-import com.nht.dtle.mtrip.SampleApplication.utils.LoadingDialogHandler;
-import com.nht.dtle.mtrip.SampleApplication.utils.SampleApplicationGLView;
-import com.nht.dtle.mtrip.SampleApplication.utils.Texture;
 
 import org.apache.http.util.ByteArrayBuffer;
 import org.json.JSONObject;
@@ -1116,7 +1117,7 @@ public class Books extends Activity implements SampleApplicationControl
         if (mBookData != null)
         {
             // Starts an Intent to open the book URL
-            Intent intent = new Intent(this, PlaceDetailActiviy.class);
+            Intent intent = new Intent(this, PlaceDetailActivity.class);
             intent.putExtra("position", mBookData.getID() - 1);
             startActivity(intent);
         }

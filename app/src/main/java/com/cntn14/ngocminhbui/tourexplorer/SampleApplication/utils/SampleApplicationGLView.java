@@ -7,7 +7,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.SampleApplication.utils;
+package com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
@@ -72,7 +72,7 @@ public class SampleApplicationGLView extends GLSurfaceView
     
     // Creates OpenGL contexts.
     private static class ContextFactory implements
-        GLSurfaceView.EGLContextFactory
+        EGLContextFactory
     {
         private static int EGL_CONTEXT_CLIENT_VERSION = 0x3098;
 
@@ -114,7 +114,7 @@ public class SampleApplicationGLView extends GLSurfaceView
 
     // The config chooser.
     private static class ConfigChooser implements
-        GLSurfaceView.EGLConfigChooser
+        EGLConfigChooser
     {
         public ConfigChooser(int r, int g, int b, int a, int depth, int stencil)
         {

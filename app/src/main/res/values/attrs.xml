@@ -3,4 +3,15 @@
     <declare-styleable name="CustomBottomSheetBehavior">
         <attr name="anchorPoint" format="dimension"/>
     </declare-styleable>
+    <declare-styleable name="MapViewPager">
+        <attr name="markersAlpha" format="float" />
+        <attr name="viewPagerWeight" format="integer" />
+        <attr name="mapWeight" format="integer" />
+        <attr name="mapGravity" format="integer" />
+        <attr name="mapOffset" format="dimension" />
+        <attr name="mapPaddingLeft" format="dimension" />
+        <attr name="mapPaddingTop" format="dimension" />
+        <attr name="mapPaddingRight" format="dimension" />
+        <attr name="mapPaddingBottom" format="dimension" />
+    </declare-styleable>
 </resources>

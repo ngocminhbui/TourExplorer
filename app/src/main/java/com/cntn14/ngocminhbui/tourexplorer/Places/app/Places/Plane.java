@@ -7,9 +7,9 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.Places.app.Places;
+package com.cntn14.ngocminhbui.tourexplorer.Places.app.Places;
 
-import com.nht.dtle.mtrip.SampleApplication.utils.MeshObject;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.MeshObject;
 
 import java.nio.Buffer;
 

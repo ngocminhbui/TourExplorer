@@ -1,19 +1,14 @@
-package com.nht.dtle.mtrip;
+package com.cntn14.ngocminhbui.tourexplorer;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.nht.dtle.mtrip.Place.Place;
-import com.nht.dtle.mtrip.PlaceDetail.PlaceDetailActiviy;
+import com.cntn14.ngocminhbui.tourexplorer.Place.Place;
 
 import java.util.ArrayList;
 

@@ -1,35 +1,29 @@
-package com.nht.dtle.mtrip.Direction;
+package com.cntn14.ngocminhbui.tourexplorer.Direction;
 
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.nht.dtle.mtrip.Direction.DirectionFinder;
-import com.nht.dtle.mtrip.Direction.DirectionFinderListener;
-import com.nht.dtle.mtrip.Direction.Route;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.nht.dtle.mtrip.LocalDatabase;
-import com.nht.dtle.mtrip.Place.Place;
-import com.nht.dtle.mtrip.R;
+import com.cntn14.ngocminhbui.tourexplorer.LocalDatabase;
+import com.cntn14.ngocminhbui.tourexplorer.Place.Place;
+import com.cntn14.ngocminhbui.tourexplorer.R;
 
 import java.util.ArrayList;
 import java.util.List;

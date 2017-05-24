@@ -1,13 +1,119 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.cntn14.ngocminhbui.tourexplorer.Activity.MainActivity">
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:columnCount="2"
+    android:orientation="horizontal"
+    android:rowCount="8">
 
-</RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="4"
+        android:text="1"
+        android:layout_width="170dp"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_margin="5dp"
+        android:id="@+id/cv_activity_main_actionListFavourite">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/landmarkicon"
+                android:layout_gravity="top|center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các địa điểm đã lưu"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:layout_rowSpan="7"
+        android:text="2"
+        android:layout_height="280dp"
+        android:layout_width="100dp"
+        app:cardBackgroundColor="@color/blue"
+        android:layout_margin="5dp"
+        android:background="@drawable/landmarkicon"
+        android:id="@+id/cv_activity_main_actionListLandmark"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bridge_icon"
+                android:layout_gravity="top|center"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Danh sách các địa điểm"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"/>
+
+        </FrameLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_columnSpan="1"
+        android:layout_rowSpan="4"
+        android:layout_gravity="fill"
+        android:text="3"
+        android:layout_width="170dp"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@color/green"
+        android:layout_margin="5dp"
+        android:id="@+id/cv_activity_main_actionCalendar"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar_icon"
+                android:layout_gravity="top|center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lịch trình"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="5dp"
+                android:textColor="#FFFFFF"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</GridLayout>

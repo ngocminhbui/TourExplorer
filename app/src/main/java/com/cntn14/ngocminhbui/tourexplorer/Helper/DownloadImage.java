@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 
-import com.cntn14.ngocminhbui.tourexplorer.Activity.MainActivity;
 
 import java.io.InputStream;
 

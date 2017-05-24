@@ -64,10 +64,10 @@ public class ListMapLandMarkAdapter extends RecyclerView.Adapter<ListMapLandMark
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         final Landmark lm = list_landmark.get(position);
-        holder.tv_landmark_name.setText(lm.m_name);
+        holder.tv_landmark_name.setText(lm.Name);
         holder.iv_landmarkimg.setImageBitmap(lm.m_bm);
-        holder.rb_landmarkscore.setRating((float) lm.m_star);
-        holder.tv_landmarkhour.setText(lm.m_hour);
+        holder.rb_landmarkscore.setRating((float) lm.Rating);
+        holder.tv_landmarkhour.setText(lm.Hour);
         holder.tv_landmarkdistance.setText(lm.m_distance);
         if(lm.m_bm == null){
             new DownloadImage(context, new OnTaskCompleted() {
@@ -76,7 +76,7 @@ public class ListMapLandMarkAdapter extends RecyclerView.Adapter<ListMapLandMark
                     holder.iv_landmarkimg.setImageBitmap(bm);
                     lm.m_bm=bm;
                 }
-            }).execute(lm.m_img);
+            }).execute(lm.ImageURL);
         }
         else{
             holder.iv_landmarkimg.setImageBitmap(lm.m_bm);

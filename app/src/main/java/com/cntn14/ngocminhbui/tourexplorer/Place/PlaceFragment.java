@@ -1,4 +1,4 @@
-package com.nht.dtle.mtrip.Place;
+package com.cntn14.ngocminhbui.tourexplorer.Place;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,14 +11,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.nht.dtle.mtrip.PlaceDetail.PlaceDetailActiviy;
-import com.nht.dtle.mtrip.R;
+//import com.cntn14.ngocminhbui.tourexplorer.PlaceDetail.PlaceDetailActiviy;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
 
-import static com.nht.dtle.mtrip.Place.PlaceAdapter.SPOT_DES;
-import static com.nht.dtle.mtrip.Place.PlaceAdapter.SPOT_IMG;
-import static com.nht.dtle.mtrip.Place.PlaceAdapter.SPOT_TITLES;
+import com.cntn14.ngocminhbui.tourexplorer.R;
+
+import static com.cntn14.ngocminhbui.tourexplorer.Place.PlaceAdapter.SPOT_DES;
+import static com.cntn14.ngocminhbui.tourexplorer.Place.PlaceAdapter.SPOT_IMG;
+import static com.cntn14.ngocminhbui.tourexplorer.Place.PlaceAdapter.SPOT_TITLES;
 
 
 public class PlaceFragment extends Fragment implements View.OnClickListener{
@@ -68,7 +69,7 @@ public class PlaceFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this.getActivity(), PlaceDetailActiviy.class);
+        Intent intent = new Intent(this.getActivity(), PlaceDetailActivity.class);
         intent.putExtra("position", index);
         startActivity(intent);
     }

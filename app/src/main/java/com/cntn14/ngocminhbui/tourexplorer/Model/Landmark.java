@@ -1,6 +1,11 @@
 package com.cntn14.ngocminhbui.tourexplorer.Model;
 
+import android.graphics.Bitmap;
+
+import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.Utility;
 import com.google.android.gms.maps.model.LatLng;
+
+import java.util.ArrayList;
 
 /**
  * Created by ngocminh on 5/19/17.
@@ -19,8 +24,16 @@ public class Landmark {
     public String Description;
     public String JSON;
     public LatLng LatLng;
+    public String m_imUrl;
+    public float Rating;
+    public Bitmap m_bm;
+    public String m_distance;
+    public String ImageURL;
+    public boolean m_favourite;
+    public ArrayList<com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.Utility> m_utilities;
 
-    public Landmark(int ID, String name, String url, String address, double lat, double aLong, String hour, String phone, String shortDescription, String description, String JSON) {
+
+    public Landmark(int ID, String name, String url, String address, double lat, double aLong, String hour, String phone, String shortDescription, String description, String JSON, String ImageURL) {
         this.ID = ID;
         Name = name;
         Url = url;
@@ -33,5 +46,6 @@ public class Landmark {
         Description = description;
         this.JSON = JSON;
         LatLng = new LatLng(Lat,Long);
+        this.ImageURL=ImageURL;
     }
 }

@@ -7,7 +7,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.SampleApplication;
+package com.cntn14.ngocminhbui.tourexplorer.SampleApplication;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -16,6 +16,8 @@ import android.opengl.GLES20;
 import android.opengl.Matrix;
 import android.util.Log;
 
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.SampleUtils;
+import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.utils.VideoBackgroundShader;
 import com.vuforia.COORDINATE_SYSTEM_TYPE;
 import com.vuforia.CameraDevice;
 import com.vuforia.Device;
@@ -35,8 +37,6 @@ import com.vuforia.Vec4I;
 import com.vuforia.VideoBackgroundConfig;
 import com.vuforia.VideoMode;
 import com.vuforia.ViewList;
-import com.nht.dtle.mtrip.SampleApplication.utils.SampleUtils;
-import com.nht.dtle.mtrip.SampleApplication.utils.VideoBackgroundShader;
 
 public class SampleAppRenderer {
 

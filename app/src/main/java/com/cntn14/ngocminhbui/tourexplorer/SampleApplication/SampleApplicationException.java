@@ -7,7 +7,7 @@ Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ===============================================================================*/
 
-package com.nht.dtle.mtrip.SampleApplication;
+package com.cntn14.ngocminhbui.tourexplorer.SampleApplication;
 
 // Used to send back to the activity any error during vuforia processes
 public class SampleApplicationException extends Exception

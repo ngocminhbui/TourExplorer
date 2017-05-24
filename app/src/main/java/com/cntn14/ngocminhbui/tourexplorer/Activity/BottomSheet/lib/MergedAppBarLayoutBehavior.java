@@ -27,9 +27,10 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import com.cntn14.ngocminhbui.tourexplorer.R;
+
 import java.lang.ref.WeakReference;
 
-import co.com.parsoniisolutions.custombottomsheetbehavior.R;
 /**
  ~ Licensed under the Apache License, Version 2.0 (the "License");
  ~ you may not use this file except in compliance with the License.

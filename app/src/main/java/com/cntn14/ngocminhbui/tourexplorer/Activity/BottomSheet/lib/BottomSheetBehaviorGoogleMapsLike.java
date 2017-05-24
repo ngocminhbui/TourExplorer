@@ -17,12 +17,13 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
+import com.cntn14.ngocminhbui.tourexplorer.R;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
 import java.util.Vector;
 
-import co.com.parsoniisolutions.custombottomsheetbehavior.R;
 
 
 public class BottomSheetBehaviorGoogleMapsLike<V extends View> extends CoordinatorLayout.Behavior<V> {

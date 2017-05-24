@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".sample.MainActivity">
+    tools:context=".Activity.BottomSheet.sample.BottomSheetTest">
 
     <FrameLayout
         android:id="@+id/dummy_framelayout_replacing_map"
@@ -16,11 +16,13 @@
         android:background="@android:color/darker_gray"
         android:fitsSystemWindows="true"/>
     <!--</FrameLayout>-->
-    <!--<fragment-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:id="@+id/support_map"-->
-    <!--android:name="com.google.android.gms.maps.SupportMapFragment"/>-->
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/gm_bottomsheet_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbarlayout"
@@ -61,6 +63,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"/>
+
+
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
@@ -71,7 +75,8 @@
         android:src="@drawable/ic_action_go"
         android:layout_margin="@dimen/fab_margin"
         app:layout_behavior="@string/ScrollAwareFABBehavior"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:id="@+id/fab_bottomsheet_go"/>
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/merged_appbarlayout"

@@ -14,11 +14,10 @@
         app:showAsAction="ifRoom"
         ></item>
     <item
-        android:id="@+id/action_takepicture"
+        android:id="@+id/action_recognition"
         android:orderInCategory="200"
-        android:title="Search"
-
-        android:icon="@drawable/ic_map"
+        android:title="Image Recognition"
+        android:icon="@drawable/ic_photo_camera_black_36dp"
         app:showAsAction="ifRoom"
         ></item>
 

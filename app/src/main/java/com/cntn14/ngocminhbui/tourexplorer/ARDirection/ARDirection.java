@@ -1,4 +1,4 @@
-package com.nht.dtle.mtrip.ARDirection;
+package com.cntn14.ngocminhbui.tourexplorer.ARDirection;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -12,20 +12,21 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nht.dtle.mtrip.ARHelper.AugmentedPOI;
-import com.nht.dtle.mtrip.ARHelper.MyCurrentAzimuth;
-import com.nht.dtle.mtrip.ARHelper.MyCurrentLocation;
-import com.nht.dtle.mtrip.ARHelper.OnAzimuthChangedListener;
-import com.nht.dtle.mtrip.ARHelper.OnLocationChangedListener;
-import com.nht.dtle.mtrip.LocalDatabase;
-import com.nht.dtle.mtrip.Place.Place;
-import com.nht.dtle.mtrip.PlaceDetail.PlaceDetailActiviy;
-import com.nht.dtle.mtrip.R;
+import com.cntn14.ngocminhbui.tourexplorer.ARHelper.AugmentedPOI;
+import com.cntn14.ngocminhbui.tourexplorer.ARHelper.MyCurrentAzimuth;
+import com.cntn14.ngocminhbui.tourexplorer.ARHelper.MyCurrentLocation;
+import com.cntn14.ngocminhbui.tourexplorer.ARHelper.OnAzimuthChangedListener;
+import com.cntn14.ngocminhbui.tourexplorer.ARHelper.OnLocationChangedListener;
+import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
+//import com.cntn14.ngocminhbui.tourexplorer.PlaceDetail.PlaceDetailActiviy;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
+
+import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
+import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -50,7 +51,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     private MyCurrentLocation myCurrentLocation;
 
     ArrayList<AugmentedPOI> ranges = new ArrayList<>();
-    ArrayList<Place> places = new ArrayList<>();
+    ArrayList<Landmark> places = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,14 +85,14 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     }
 
     private void LoadData(){
-        places = LocalDatabase.list_place;
+        places = Database.getLandmarks(this);
         for (int i=0; i<places.size(); i++)
         {
             double midAzimuth = calculateTeoreticalAzimuth(places.get(i));
             double minAzimuth = calculateAzimuthAccuracy(midAzimuth).get(0);
             double maxAzimuth = calculateAzimuthAccuracy(midAzimuth).get(0);
             ranges.add(new AugmentedPOI(i, midAzimuth, minAzimuth, maxAzimuth));
-            Log.d(places.get(i).getName(), String.valueOf(midAzimuth));
+            Log.d(places.get(i).Name, String.valueOf(midAzimuth));
         }
     }
 
@@ -105,18 +106,18 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
 
             ImageView ivAvatar = (ImageView) layout.findViewById(R.id.iv_ardir_avatar);
             Picasso.with(this)
-                    .load(places.get(i).getImUrl())
+                    .load(places.get(i).ImageURL)
                     .resize(60, 60)
                     .centerCrop()
                     .into(ivAvatar);
             TextView tvName = (TextView) layout.findViewById(R.id.tv_ardir_name);
-            tvName.setText(places.get(i).getName());
+            tvName.setText(places.get(i).Name);
 
             final int finalI = i;
             layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(ARDirection.this, PlaceDetailActiviy.class);
+                    Intent intent = new Intent(ARDirection.this, PlaceDetailActivity.class);
                     intent.putExtra("position", finalI);
                     startActivity(intent);
                 }
@@ -125,9 +126,9 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
 
     }
 
-    public double calculateTeoreticalAzimuth(Place mlandmark) {
-        double dX = mlandmark.getLatitude() - mMyLatitude;
-        double dY = mlandmark.getLongitude() - mMyLongitude;
+    public double calculateTeoreticalAzimuth(Landmark mlandmark) {
+        double dX = mlandmark.LatLng.latitude- mMyLatitude;
+        double dY = mlandmark.LatLng.longitude - mMyLongitude;
 
         double phiAngle;
         double tanPhi;
@@ -197,7 +198,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         for (int i=0; i<ranges.size(); i++) {
             View layout = infoBox.get(i);
             if (ranges.get(i).isInside(mAzimuthReal)) {
-                Log.d("Entered", places.get(i).getName());
+//                Log.d("Entered", places.get(i).getName());
                 Log.d("Your azimuth", String.valueOf(mAzimuthReal));
                 Log.d("Left - Right - Mid", String.valueOf(ranges.get(i).getMinRange()) + " - " + String.valueOf(ranges.get(i).getMaxRange()) + " - " + String.valueOf(ranges.get(i).getTeoreticalAzimuth()));
 
@@ -214,7 +215,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
 
                 float[] dist = new float[1];
                 Location.distanceBetween(mMyLatitude, mMyLongitude,
-                        places.get(i).getLatitude(), places.get(i).getLongitude(), dist);
+                        places.get(i).LatLng.latitude, places.get(i).LatLng.longitude, dist);
                 TextView tvDistance = (TextView) layout.findViewById(R.id.tv_ardir_distance);
                 dist[0] = dist[0] / 1000;
                 tvDistance.setText(String.format("%.1f km", dist[0]));

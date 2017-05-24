@@ -4,7 +4,6 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v4.app.ActivityCompat;
@@ -12,23 +11,15 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.cntn14.ngocminhbui.tourexplorer.Adapter.ImageAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.PlaceImageSliderAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.StripImageAdapter;
-import com.cntn14.ngocminhbui.tourexplorer.Helper.DownloadImage;
-import com.cntn14.ngocminhbui.tourexplorer.Helper.OnTaskCompleted;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
@@ -92,9 +83,9 @@ public class PlaceDetailActivity extends AppCompatActivity {
         ib_openwebsite=(ImageButton)findViewById(R.id.ib_openwebsite);
 
 
-        tv_activity_detail_landmark_name.setText(landmark.m_name);
-        rb_activity_detail_landmarkscore.setRating((float) landmark.m_star);
-        tv_activity_detail_landmarkhour.setText(landmark.m_hour);
+        tv_activity_detail_landmark_name.setText(landmark.Name);
+        rb_activity_detail_landmarkscore.setRating((float) landmark.Rating);
+        tv_activity_detail_landmarkhour.setText(landmark.Hour);
         tv_activity_detail_landmarkdistance.setText(landmark.m_distance);
         ib_call.setOnClickListener(new View.OnClickListener() {
             @Override

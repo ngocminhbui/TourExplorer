@@ -1,6 +1,4 @@
-package com.nht.dtle.mtrip.Place;
-
-import java.util.List;
+package com.cntn14.ngocminhbui.tourexplorer.Place;
 
 /**
  * Created by yoh on 5/10/17.

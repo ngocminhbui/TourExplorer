@@ -18,9 +18,10 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.cntn14.ngocminhbui.tourexplorer.R;
+
 import java.lang.ref.WeakReference;
 
-import co.com.parsoniisolutions.custombottomsheetbehavior.R;
 
 /**
  ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -174,7 +175,7 @@ public class ScrollingAppBarLayoutBehavior extends AppBarLayout.ScrollingViewBeh
                 Window window = ((Activity)mContext).getWindow();
                 window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
                 window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-                window.setStatusBarColor(ContextCompat.getColor(mContext,R.color.colorPrimaryDark));
+                window.setStatusBarColor(ContextCompat.getColor(mContext, R.color.colorPrimaryDark));
             }else {
                 Window window = ((Activity)mContext).getWindow();
                 window.clearFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
