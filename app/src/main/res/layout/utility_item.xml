@@ -11,7 +11,6 @@
         android:background="@drawable/circle"
         android:drawableTop="@android:drawable/ic_dialog_map"
         android:paddingTop="20dp"
-        android:text="Map"
         android:textColor="#fff"
         android:id="@+id/bt_utilityitem"/>
 

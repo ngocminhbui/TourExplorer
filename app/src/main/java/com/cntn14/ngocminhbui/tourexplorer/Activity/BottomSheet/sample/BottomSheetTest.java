@@ -36,6 +36,7 @@ import android.widget.Toast;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.bumptech.glide.util.Util;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.BottomSheetBehaviorGoogleMapsLike;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.MergedAppBarLayoutBehavior;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.SlideshowDialogFragment;
@@ -46,6 +47,7 @@ import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinderListener;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.Route;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Image;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
+import com.cntn14.ngocminhbui.tourexplorer.Model.UtilityType;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 import com.github.jjobes.slidedatetimepicker.SlideDateTimeListener;
@@ -69,6 +71,7 @@ import java.util.Date;
 import java.util.List;
 
 
+
 public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -87,6 +90,7 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
     ItemPagerAdapter pageradapter;
     private RecyclerView photoGalleryRecyclerView;
     RecyclerView utilityRecyclerView;
+    UtilityAdapter utilityAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,14 +110,20 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
         }
 
 
-        ArrayList<Utility> utilities = landmark.m_utilities;
-        UtilityAdapter utilityAdapter = new UtilityAdapter((Context)this, (ArrayList<Utility>)utilities );
+
+
+
+        ArrayList<Utility> utilities = new ArrayList<>();
+        utilityAdapter = new UtilityAdapter((Context)this, utilities );
+
+
         utilityRecyclerView = (RecyclerView) findViewById(R.id.rv_bottomsheet_utilities);
         RecyclerView.LayoutManager utilityLayoutManager = new GridLayoutManager(getApplicationContext(),3);
         utilityRecyclerView.setLayoutManager(utilityLayoutManager);
         utilityRecyclerView.setItemAnimator(new DefaultItemAnimator());
         utilityRecyclerView.setAdapter(utilityAdapter);
 
+        fetchUtility(landmark, utilities);
 
 
         photoGalleryRecyclerView = (RecyclerView) findViewById(R.id.rv_bottomsheet_photogallery);
@@ -207,6 +217,22 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
         behavior.setState(BottomSheetBehaviorGoogleMapsLike.STATE_ANCHOR_POINT);
 
         Binding();
+    }
+
+    private void fetchUtility(Landmark landmark, ArrayList<Utility> utilities) {
+        Utility utilityPhone = new Utility(UtilityType.PHONE,"Gọi điện", landmark.Phone);
+        Utility utilityWeb = new Utility(UtilityType.WEB, "Trang chủ", landmark.Url);
+        Utility utilityMap = new Utility(UtilityType.MAP, "Bản đồ", landmark.LatLng.toString());
+        Utility utility1080 = new Utility(UtilityType.PHONE, "Tra cứu", "08 1080");
+
+
+        utilities.add(utilityPhone);
+        utilities.add(utilityWeb);
+        utilities.add(utilityMap);
+        utilities.add(utility1080);
+
+        utilityAdapter.notifyDataSetChanged();
+
     }
 
     private void fetchImages() {
