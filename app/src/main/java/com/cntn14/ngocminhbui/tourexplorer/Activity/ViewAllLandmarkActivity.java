@@ -177,7 +177,7 @@ public class ViewAllLandmarkActivity extends AppCompatActivity implements OnMapR
         if (start.isEmpty() || end.isEmpty()){
             Toast.makeText(getApplicationContext(),"fill", Toast.LENGTH_LONG).show();
         }
-        try{]]
+        try{
             new DirectionFinder(onDirectionFinished,start,end).execute();
 
         }catch (Exception e) {
