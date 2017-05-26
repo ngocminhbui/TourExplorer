@@ -157,4 +157,7 @@ limitations under the License. Lorem ipsum dolor sit amet, consectetuer adipisci
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+
+    <string name="facebook_app_id">1330980717017685</string>
+    <string name="fb_login_protocol_scheme">fb1330980717017685</string>
 </resources>

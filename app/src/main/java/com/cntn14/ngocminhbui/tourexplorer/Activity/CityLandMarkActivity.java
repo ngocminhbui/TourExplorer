@@ -32,6 +32,8 @@ import android.widget.Toast;
 import com.cntn14.ngocminhbui.tourexplorer.ARDirection.ARDirection;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.ListLandMarkAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
+import com.cntn14.ngocminhbui.tourexplorer.Database.LandmarkType;
+import com.cntn14.ngocminhbui.tourexplorer.Database.SQLiteLandmark;
 import com.cntn14.ngocminhbui.tourexplorer.Fragment.ListLandmarkFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Fragment.OneFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
@@ -124,20 +126,20 @@ public class CityLandMarkActivity extends AppCompatActivity {
         allList.setList_landmark(list_landmark);
 
         ListLandmarkFragment museumList = new ListLandmarkFragment();
-        museumList.setList_landmark(list_landmark);
+        museumList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.MUSEUM));
 
         ListLandmarkFragment parkList = new ListLandmarkFragment();
-        parkList.setList_landmark(list_landmark);
+        parkList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.PARK));
 
         ListLandmarkFragment resort = new ListLandmarkFragment();
-        resort.setList_landmark(list_landmark);
+        resort.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.OTHER));
 
 
         ListLandmarkFragment restaurant = new ListLandmarkFragment();
-        restaurant.setList_landmark(list_landmark);
+        restaurant.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.FOOD));
 
         ListLandmarkFragment other = new ListLandmarkFragment();
-        other.setList_landmark(list_landmark);
+        other.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.OTHER));
 
 
 

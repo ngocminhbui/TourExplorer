@@ -122,6 +122,7 @@
     <orderEntry type="library" exported="" name="play-services-location-10.2.4" level="project" />
     <orderEntry type="library" exported="" name="firebase-crash-10.2.4" level="project" />
     <orderEntry type="library" exported="" name="play-services-tagmanager-api-10.2.4" level="project" />
+    <orderEntry type="library" exported="" name="bolts-android-1.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-fragment-25.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-appinvite-10.2.4" level="project" />
@@ -132,6 +133,7 @@
     <orderEntry type="library" exported="" scope="TEST" name="javax.annotation-api-1.2" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-10.2.4" level="project" />
     <orderEntry type="library" exported="" name="play-services-plus-10.2.4" level="project" />
+    <orderEntry type="library" exported="" name="facebook-android-sdk-4.5.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-games-10.2.4" level="project" />
     <orderEntry type="library" exported="" name="play-services-gcm-10.2.4" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />

@@ -33,8 +33,10 @@ public class Landmark {
     public ArrayList<com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.Utility> m_utilities;
     public String UtilityJSON;
 
+    public String LandmarkType;
 
-    public Landmark(int ID, String name, String url, String address, double lat, double aLong, String hour, String phone, String shortDescription, String description, String JSON, String ImageURL, String UtilityJSON) {
+
+    public Landmark(int ID, String name, String url, String address, double lat, double aLong, String hour, String phone, String shortDescription, String description, String JSON, String ImageURL, String UtilityJSON, String landmarkType) {
         this.ID = ID;
         Name = name;
         Url = url;
@@ -49,5 +51,6 @@ public class Landmark {
         LatLng = new LatLng(Lat,Long);
         this.ImageURL=ImageURL;
         this.UtilityJSON = UtilityJSON;
+        this.LandmarkType = landmarkType;
     }
 }

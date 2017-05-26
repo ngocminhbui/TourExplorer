@@ -66,6 +66,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/ngocminh/.android/build-cache/9642eca9a88d65ef47b9215df60f54c73b1b9cad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15ad6a46fb8e2ed86556e0b330d738b589dc62c7">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ccd02370e0df91771dc8171d64302993e3ff1967/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/ngocminh/.android/build-cache/623fa53c535be7717533ad7f5fbd5972c5f3cf2c/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -351,6 +360,15 @@
         revision="25.0.2"
         sha1="143e5647b772c08c9f0d807b24bbc0b05ff6c7d2">
         <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d6d74229724fde1a88b560dd7ca23ab0b3fd4683/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ngocminh/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.2.0/6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd/bolts-android-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ee2953ccf51ce72b6d548c30c4633b99eb4f9dd">
+        <dex dex="/home/ngocminh/Desktop/TourExplorer/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-android-1.2.0_7e313578cc8b9833fc62fdf50619d787d1a3d5f5/classes.dex" />
     </item>
     <item
         is-multidex="true"
