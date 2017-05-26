@@ -133,7 +133,6 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
             tv_activity_landmarkhour=(TextView)itemView.findViewById(R.id.tv_activity_landmarkhour);
             tv_activity_landmarkdistance=(TextView)itemView.findViewById(R.id.tv_activity_landmarkdistance);
             ib_activity_seemore = (ImageButton)itemView.findViewById(R.id.ib_activity_seemore);
-            ib_activity_showdetail = (ImageButton)itemView.findViewById(R.id.ib_activity_showdetail);
             tv_activity_landmark_description.setVisibility(View.GONE);
             mfb_activity_landmark_favourite = (MaterialFavoriteButton)itemView.findViewById(R.id.mfb_activity_landmark_favourite);
             tv_activity_landmarkopenstatus = (TextView)itemView.findViewById(R.id.tv_activity_landmarkopenstatus);

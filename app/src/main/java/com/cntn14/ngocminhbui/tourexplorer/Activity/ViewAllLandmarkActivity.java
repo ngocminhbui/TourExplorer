@@ -140,7 +140,6 @@ public class ViewAllLandmarkActivity extends AppCompatActivity implements OnMapR
 
                                                          routeLandmark(lm);
 
-                                                         Toast.makeText(getApplicationContext(), String.valueOf(lm.LatLng.latitude), Toast.LENGTH_SHORT).show();
                                                      }
 
 

@@ -10,4 +10,9 @@ public class LandmarkType {
     public static String PARK = "park";
     public static String OTHER = "other";
     public static String FOOD = "food";
+    public static String RESTAURANT = "restaurant";
+    public static String HOTEL = "hotel";
+    public static String CINEMA = "cinema";
+
+
 }

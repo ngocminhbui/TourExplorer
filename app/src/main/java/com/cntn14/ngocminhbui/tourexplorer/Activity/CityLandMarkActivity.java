@@ -10,6 +10,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -84,7 +85,10 @@ public class CityLandMarkActivity extends AppCompatActivity {
             intent.putExtra("ABOUT_TEXT_TITLE", "Books");
             intent.putExtra("ABOUT_TEXT", "Books/CR_about.html");
             startActivity(intent);
-    }
+    }else if (id==android.R.id.home){
+            finish();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -125,18 +129,33 @@ public class CityLandMarkActivity extends AppCompatActivity {
         ListLandmarkFragment allList = new ListLandmarkFragment();
         allList.setList_landmark(list_landmark);
 
+        ListLandmarkFragment historicalList = new ListLandmarkFragment();
+        historicalList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.HISTORICAL));
+
+
         ListLandmarkFragment museumList = new ListLandmarkFragment();
         museumList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.MUSEUM));
+
+        ListLandmarkFragment amusementList = new ListLandmarkFragment();
+        amusementList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.AMUSEMENT));
+
 
         ListLandmarkFragment parkList = new ListLandmarkFragment();
         parkList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.PARK));
 
-        ListLandmarkFragment resort = new ListLandmarkFragment();
-        resort.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.OTHER));
+        ListLandmarkFragment foodList = new ListLandmarkFragment();
+        foodList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.FOOD));
+
+        ListLandmarkFragment hotelList = new ListLandmarkFragment();
+        hotelList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.HOTEL));
 
 
-        ListLandmarkFragment restaurant = new ListLandmarkFragment();
-        restaurant.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.FOOD));
+        ListLandmarkFragment restaurantList = new ListLandmarkFragment();
+        restaurantList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.RESTAURANT));
+
+        ListLandmarkFragment cinemaList = new ListLandmarkFragment();
+        cinemaList.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.CINEMA));
+
 
         ListLandmarkFragment other = new ListLandmarkFragment();
         other.setList_landmark(SQLiteLandmark.getListLandmarkByType(list_landmark, LandmarkType.OTHER));
@@ -144,10 +163,16 @@ public class CityLandMarkActivity extends AppCompatActivity {
 
 
         adapter.addFragment(allList, "Tất cả");
+        adapter.addFragment(historicalList,"Di tích");
         adapter.addFragment(museumList, "Bảo tàng");
+        adapter.addFragment(amusementList,"Giải trí");
         adapter.addFragment(parkList, "Công viên");
-        adapter.addFragment(resort, "Khu du lịch");
-        adapter.addFragment(restaurant, "Nhà hàng");
+        adapter.addFragment(foodList, "Ăn uống");
+        adapter.addFragment(restaurantList,"Nhà hàng");
+        adapter.addFragment(hotelList, "Khách sạn");
+
+
+        adapter.addFragment(cinemaList,"Rạp Chiếu phim");
         adapter.addFragment(other, "Khác");
 
 

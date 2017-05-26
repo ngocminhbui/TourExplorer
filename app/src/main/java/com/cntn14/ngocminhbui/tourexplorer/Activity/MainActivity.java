@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
         CardView btnFavourite = (CardView)findViewById(R.id.cv_activity_main_actionListFavourite);
         CardView btnSchedule = (CardView)findViewById(R.id.cv_activity_main_actionCalendar);
         CardView cv_activity_main_actionneedtoknow = (CardView)findViewById(R.id.cv_activity_main_actionneedtoknow);
+
+
+
+
         btnListLandmark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(intent);
             }
         });
+
+
     }
 
 

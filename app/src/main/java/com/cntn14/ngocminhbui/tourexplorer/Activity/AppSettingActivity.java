@@ -19,6 +19,7 @@ public class AppSettingActivity extends AppCompatActivity {
 
         pb = (SeekBar) findViewById(R.id.seekbar2);
         final int oldprogress = pb.getProgress();
+        
 
         pb.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

@@ -17,7 +17,7 @@
         android:id="@+id/action_ar_direction"
         android:orderInCategory="200"
         android:title="AR Direction"
-        android:icon="@drawable/ic_remove_red_eye_black_36dp"
+        android:icon="@drawable/ic_vision_white"
         app:showAsAction="ifRoom"
         ></item>
     <item

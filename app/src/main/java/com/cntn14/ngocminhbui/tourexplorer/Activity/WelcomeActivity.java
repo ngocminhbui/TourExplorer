@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.cntn14.ngocminhbui.tourexplorer.Helper.PrefManager;
 import com.cntn14.ngocminhbui.tourexplorer.R;
+import com.cntn14.ngocminhbui.tourexplorer.Service.LocationService;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -162,6 +163,10 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
+
+        startService(new Intent(this, LocationService.class));
+
+
         startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
         finish();
     }

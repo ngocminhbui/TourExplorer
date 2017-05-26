@@ -5,9 +5,29 @@
     tools:context="com.cntn14.ngocminhbui.tourexplorer.Fragment.CurrencyFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:maxHeight="200dp"
+                android:src="@drawable/ic_currency"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Đồng (VND) là đơn vị tiền tệ chính thức của Việt Nam, do Ngân hàng Nhà nước Việt Nam phát hành. Nó có ký hiệu là ₫, mã quốc tế theo ISO 4217 là VND. Một đồng có giá trị bằng 100 xu hay 10 hào. Hai đơn vị xu và hào vì quá nhỏ nên không còn được phát hành nữa. Tiền giấy được phát hành hiện nay có giá trị 500₫, 1000₫, 2000₫, 5000₫, 10.000₫, 20.000₫, 50.000₫, 100.000₫, 200.000₫ và 500.000₫" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>

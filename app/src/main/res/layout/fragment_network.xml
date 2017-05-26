@@ -5,9 +5,47 @@
     tools:context="com.cntn14.ngocminhbui.tourexplorer.Fragment.NetworkFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_callingphone"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đối với cuộc gọi tới máy bàn, thêm đầu số 08 đại diện cho mã vùng thành phố ở đầu số điện thoại"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_sim"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các nhà cung cấp dịch vụ mạng lớn là Viettel, Mobifone, Vinaphone.... Có thể mua SIM các nhà mạng này tại các của hàng dịch vụ điện thoại"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_4g"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hiện thành phố đã phủ sóng 3G và 4G. Ngoài ra Internet cũng được cung cấp miễn phí tại các công viên, phố đi bộ..."/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

@@ -41,8 +41,8 @@ public class SQLiteDataController extends SQLiteOpenHelper {
     public boolean isCreatedDatabase() throws IOException {
         // Default là đã có DB
         boolean result = true;
-        this.getReadableDatabase();
-        copyDataBase();
+        //this.getReadableDatabase();
+        //copyDataBase();
 
         // Nếu chưa tồn tại DB thì copy từ Asses vào Data
         if (!checkExistDataBase()) {

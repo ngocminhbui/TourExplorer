@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.location.Location;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -24,6 +25,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import java.util.Random;
 
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -35,19 +37,23 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.cntn14.ngocminhbui.tourexplorer.ARDirection.ARDirection;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.BottomSheetBehaviorGoogleMapsLike;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.MergedAppBarLayoutBehavior;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.SlideshowDialogFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner.MyWeekViewEvent;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.ViewAllLandmarkActivity;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.GalleryAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.AppController;
 import com.cntn14.ngocminhbui.tourexplorer.Database.SQLiteWeekSchedule;
+import com.cntn14.ngocminhbui.tourexplorer.Helper.GPSHelper;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinder;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinderListener;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.Route;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Image;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.Model.UtilityType;
+import com.cntn14.ngocminhbui.tourexplorer.Places.ui.ActivityList.AboutScreen;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 import com.github.jjobes.slidedatetimepicker.SlideDateTimeListener;
@@ -203,7 +209,7 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
 
         AppBarLayout mergedAppBarLayout = (AppBarLayout) findViewById(R.id.merged_appbarlayout);
         MergedAppBarLayoutBehavior mergedAppBarLayoutBehavior = MergedAppBarLayoutBehavior.from(mergedAppBarLayout);
-        mergedAppBarLayoutBehavior.setToolbarTitle("Place Detail");
+        mergedAppBarLayoutBehavior.setToolbarTitle("Thông tin địa điểm");
         mergedAppBarLayoutBehavior.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -459,7 +465,14 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
     }
 
     void routeLandmark(Landmark lm){
-        String start = "Truong dai hoc Khoa hoc Tu nhien";
+        Location location = GPSHelper.getGPS(this);
+
+        double latitude = location.getLatitude();
+        double longitude = location.getLongitude();
+
+
+        String start = String.format("%f,%f", latitude,longitude);
+
         String end = lm.Name;//String.format("%f,%f", lm.LatLng.latitude,lm.LatLng.longitude); //lm.LatLng.latitude ;
         if (start.isEmpty() || end.isEmpty()){
             Toast.makeText(getApplicationContext(),"fill", Toast.LENGTH_LONG).show();
@@ -519,4 +532,17 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
         }
 
     };
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id==android.R.id.home){
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

@@ -6,27 +6,32 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="location" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2e7b2bd-2d41-419a-859e-6c38dafa0d5f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_event.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_promotion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_table.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ticket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_core_10_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/CurrencyFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/EmergencyFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/NetworkFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/OverViewFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/TransportationFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_4g.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_ambulance.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bike.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_bookroom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_callingphone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_car.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_currency.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_dulichthanhpho.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_firefighter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_police.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_saigon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_sim.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_taxi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_vision_white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_core_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/core_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_find_friend.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/qr_show_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/menu/view_find_friend_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
@@ -35,25 +40,32 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_libs_slideDateTimePicker_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_libs_slideDateTimePicker_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_libs_slideDateTimePicker_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_libs_slideDateTimePicker_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/DulichthanhphoDB.sqlite" afterPath="$PROJECT_DIR$/app/src/main/assets/DulichthanhphoDB.sqlite" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/slideDateTimePicker/slideDateTimePicker.iml" afterPath="$PROJECT_DIR$/app/libs/slideDateTimePicker/slideDateTimePicker.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/Utility.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/Utility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/UtilityType.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/UtilityType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="TourExplorer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,106 +102,116 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GalleryAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GalleryAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BottomSheetTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="24" column="17" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilityIcon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilityAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="103" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utility_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/utility_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
+      <file leaf-file-name="fragment_currency.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="circle.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilityType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/UtilityType.java">
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="-213">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utility.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/Utility.java">
+      <file leaf-file-name="SQLiteDataController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="435">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLiteWeekSchedule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java">
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="170">
+              <caret line="129" column="52" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="R.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java">
+      <file leaf-file-name="view_calendar_menu.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/view_calendar_menu.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="1151" column="32" selection-start-line="1151" selection-start-column="32" selection-end-line="1151" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewAllLandmarkActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="111" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_emergency.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -200,10 +222,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
+        <option value="ASClass" />
         <option value="resourceFile" />
         <option value="layoutResourceFile_vertical" />
-        <option value="ASClass" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -3836,7 +3858,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5983126690254" />
+        <entry key="$PROJECT_DIR$" value="5983147170069" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -4470,18 +4492,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_need_to_know.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_list_landmark.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/ListLandmarkFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewFavouritePlaceActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_view_favourite_place.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_city_land_mark.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-        <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/landmark/UtilityJSON.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/utility_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/TripPlanner/MyWeekViewEvent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java" />
@@ -4495,32 +4505,44 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/welcome_slide4.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/welcome_slide1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/welcome_slide3.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Helper/GPSHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/Landmark.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteLandmark.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/Utility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/UtilityType.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java" />
         <option value="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/circle.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_find_friend.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/MyLocationListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationServiceBroadcastReceiver.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/view_find_friend_menu.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/qr_show_dialog.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java" />
       </list>
     </option>
   </component>
@@ -4562,15 +4584,23 @@
               <option name="myItemId" value="TourExplorer" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="TourExplorer" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -4601,7 +4631,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="menu" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4631,6 +4661,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jniLibs" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -4719,7 +4753,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Adapter" />
+              <option name="myItemId" value="Activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -4733,21 +4767,12 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tourexplorer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="manifests" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -4758,10 +4783,11 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane />
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4769,7 +4795,7 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="F4AZFG18U144" />
-    <property name="SearchEverywhereHistoryKey" value="Bott&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;getInt&#9;PSI&#9;JAVA://android.support.design.R.style#RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup&#10;Sche&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java&#10;utilit&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.UtilityAdapter&#10;bottom&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;Need&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java&#10;needTok&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.NeedToKnowActivity.NeedToKnowActivity&#10;SQLi&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteLandmark.java&#10;Landmark&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Model.Landmark&#10;string&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/strings.xml&#10;bo&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;ada&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java&#10;st&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/styles.xml&#10;color.x&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/colors.xml&#10; b&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;b&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/TripPlanner/ViewCalendarBaseActivity.java&#10;infoWindow &#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.ViewAllLandmarkActivity#getInfoWindow&#10;infow&#9;PSI&#9;JAVA://com.google.android.gms.maps.GoogleMap.InfoWindowAdapter&#10;utilityI&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;need&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/activity_need_to_know.xml&#10;main&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/activity_main.xml&#10;c&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/bottom_sheet_content.xml&#10;GalleryA&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GalleryAdapter.java&#10;Gallery&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GallerySliderAdapter.java&#10;gallery&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/gallery_thumbnail.xml&#10;utility&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;bottomsheet_con&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/bottom_sheet_content.xml&#10;uti&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;utility_&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;InfoWin&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.ViewAllLandmarkActivity#onInfoWindowClick&#10;G&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java&#10;Sett&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Model.GlobalSetting&#10;Bot&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;AppCon&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.AppController" />
+    <property name="SearchEverywhereHistoryKey" value="Data&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Database.Database&#10;Dat&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Database.Database&#10;curren&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/fragment_currency.xml&#10;main&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/activity_main.xml&#10;trans&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/fragment_transportation.xml&#10;netwo&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/fragment_network.xml&#10;emer&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/fragment_emergency.xml&#10;Over&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/fragment_over_view.xml&#10;UtilityI&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java&#10;Type&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Database.LandmarkType&#10;rv_ite&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/rv_landmarks_item.xml&#10;Need&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java&#10;Bottom&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;City&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java&#10;Manife&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/AndroidManifest.xml&#10;bottom&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/activity_bottomsheettest.xml&#10;city&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java&#10;f&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java&#10;findfrien&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java&#10;ViewCAl&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner.ViewCalendarActivity&#10;LocationSer&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Service.LocationService&#10;location&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationService.java&#10;listener&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Adapter.GalleryAdapter.ClickListener&#10;Welcom&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java&#10;GPS&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Helper.GPSHelper&#10;Bott&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;getInt&#9;PSI&#9;JAVA://android.support.design.R.style#RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup&#10;Sche&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java&#10;utilit&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.UtilityAdapter&#10;needTok&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.NeedToKnowActivity.NeedToKnowActivity&#10;SQLi&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteLandmark.java&#10;Landmark&#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Model.Landmark&#10;string&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/strings.xml&#10;bo&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;ada&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java&#10;st&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/styles.xml&#10;color.x&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/values/colors.xml&#10; b&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java&#10;b&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/TripPlanner/ViewCalendarBaseActivity.java&#10;infoWindow &#9;PSI&#9;JAVA://com.cntn14.ngocminhbui.tourexplorer.Activity.ViewAllLandmarkActivity#getInfoWindow&#10;infow&#9;PSI&#9;JAVA://com.google.android.gms.maps.GoogleMap.InfoWindowAdapter&#10;utilityI&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;need&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/activity_need_to_know.xml&#10;c&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/bottom_sheet_content.xml&#10;GalleryA&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GalleryAdapter.java&#10;Gallery&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GallerySliderAdapter.java&#10;gallery&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/gallery_thumbnail.xml&#10;utility&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml&#10;bottomsheet_con&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/bottom_sheet_content.xml&#10;uti&#9;FILE&#9;file:///home/ngocminh/Desktop/TourExplorer/app/src/main/res/layout/utility_item.xml" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Android-Week-View-develop" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
@@ -4777,22 +4803,22 @@
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/app/src/main/assets" />
-      <recent name="$PROJECT_DIR$/app/src/main/res" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.cntn14.ngocminhbui.tourexplorer.Fragment" />
-      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity" />
-      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity.NeedToKnowActivity" />
-      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample" />
       <recent name="com.cntn14.ngocminhbui.tourexplorer.Database" />
       <recent name="landmark" />
       <recent name="com.cntn14.ngocminhbui.tourexplorer.Model" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity" />
+      <recent name="com.cntn14.ngocminhbui.tourexplorer.Fragment" />
+      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity.NeedToKnowActivity" />
+      <recent name="com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app/src/main/assets" />
+      <recent name="$PROJECT_DIR$/app/src/main/res" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -5118,25 +5144,26 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3916309" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3916309" sideWeight="0.64328766" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986301" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33583692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33583692" sideWeight="0.48054793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4302575" sideWeight="0.4739726" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.87342465" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4302575" sideWeight="0.5260274" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33583692" sideWeight="0.51945204" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24657534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3583691" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05260274" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -5146,7 +5173,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16094421" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -5155,7 +5181,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.041845493" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3916309" sideWeight="0.64328766" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -5163,22 +5189,22 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986301" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33583692" sideWeight="0.48054793" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39055794" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4302575" sideWeight="0.4739726" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.87342465" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33583692" sideWeight="0.51945204" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24657534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16094421" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.054246575" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05260274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -5196,380 +5222,25 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java</url>
+          <line>127</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/welcome_slide1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/slideDateTimePicker/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/welcome_slide4.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Helper/GPSHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="54" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/welcome_slide3.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-25/android/database/sqlite/SQLiteDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Model/Landmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2004">
-          <caret line="148" column="49" selection-start-line="148" selection-start-column="49" selection-end-line="148" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="64" column="66" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ImageGalleryActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteLandmark.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="175" column="40" selection-start-line="175" selection-start-column="40" selection-end-line="175" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="195" column="93" selection-start-line="195" selection-start-column="73" selection-end-line="195" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/PlaceDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/slideDateTimePicker/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/OverViewFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/EmergencyFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/CurrencyFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_transport.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/TransportFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/NetworkFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Fragment/TransportationFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
-          <folding>
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2928#2929#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_spot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/TestARActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/StripImageAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/Utility.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -5586,38 +5257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GalleryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="1151" column="32" selection-start-line="1151" selection-start-column="32" selection-end-line="1151" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/utility_item.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -5629,28 +5268,464 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteWeekSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="103" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+        <state relative-caret-position="885">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/design/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17190">
+          <caret line="1151" column="32" selection-start-line="1151" selection-start-column="32" selection-end-line="1151" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/ListLandMarkAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-25/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3003">
+          <caret line="22618" column="13" selection-start-line="22618" selection-start-column="13" selection-end-line="22618" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/WelcomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="174" column="51" selection-start-line="174" selection-start-column="51" selection-end-line="174" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/GalleryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationServiceBroadcastReceiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Helper/GPSHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_find_friend.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Service/LocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2252#2253#0" expanded="true" />
+            <element signature="e#2279#2280#0" expanded="true" />
+            <element signature="e#3657#3854#0" expanded="true" />
+            <element signature="e#3853#3854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/TripPlanner/ViewCalendarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/FindFriendActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1994#2213#0" expanded="true" />
+            <element signature="e#2212#2213#0" expanded="true" />
+            <element signature="e#2757#4011#0" expanded="true" />
+            <element signature="e#4010#4011#0" expanded="true" />
+            <element signature="e#5332#6098#0" expanded="true" />
+            <element signature="e#5894#5909#0" expanded="true" />
+            <element signature="e#6097#6098#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/qr_show_dialog.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/AppSettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/notifications.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/cntn14/ngocminhbui/tourexplorer/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4995">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/slideDateTimePicker/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/view_find_friend_menu.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="61" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/bottom_sheet_content.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="70" column="38" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bottomsheettest.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/BottomSheetTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="e#19083#19444#0" expanded="true" />
+            <element signature="e#19443#19444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/NeedToKnowActivity/NeedToKnowActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/rv_landmarks_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Adapter/ListLandMarkAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1545">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/LandmarkType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/CityLandMarkActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/circle.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="378">
+          <caret line="61" column="131" selection-start-line="61" selection-start-column="131" selection-end-line="61" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/BottomSheet/sample/UtilityIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_over_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="83" column="68" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
+          <folding>
+            <element signature="e#3538#3563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_network.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="48" column="17" selection-start-line="7" selection-start-column="3" selection-end-line="48" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_transportation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_emergency.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_currency.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-213">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Database/SQLiteDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="129" column="52" selection-start-line="129" selection-start-column="47" selection-end-line="129" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/view_calendar_menu.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/cntn14/ngocminhbui/tourexplorer/Activity/ViewAllLandmarkActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="111" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="258" selection-end-column="0" />
           <folding />
         </state>
       </provider>

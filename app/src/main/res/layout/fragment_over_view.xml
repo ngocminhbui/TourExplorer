@@ -4,17 +4,55 @@
     android:layout_height="match_parent"
     tools:context="com.cntn14.ngocminhbui.tourexplorer.Fragment.OverViewFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_saigon"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="113 là số điện thoại của lực lượng cảnh sát phản ứng nhanh. Hãy gọi 113 khi xảy ra tai nạn giao thông, các vụ việc có yếu tố tội phạm, vi phạm trật tự an toàn xã hội, cướp giật, đánh nhau, bạo hành...
+        android:text="Diện tích : 2.095,239 km2\n
+Dân số :  7.123.340 người (2009)\n
+Dân tộc : Việt , Hoa , Khơme , Chăm…\n
+Đơn vị HC : 24 quận huyện \n
 
-        114 là số điện thoại cho khẩn chữa cháy hay khi cần cứu hộ cứu nạn. Hãy gọi 114 khi xảy ra bất kỳ sự cố nào liên quan đến cháy nổ, đuối nước, sập nhà, kẹt thang máy...
+    Thành phố Hồ Chí Minh nằm trong toạ độ địa lý khoảng 10 0 10' – 10 0 38 vĩ độ bắc và 106 0 22' – 106 054 ' kinh độ đông . Phía Bắc giáp tỉnh Bình Dương, Tây Bắc giáp tỉnh Tây Ninh , Đông và Đông Bắc giáp tỉnh Đồng Nai, Đông Nam giáp tỉnh Bà Rịa -Vũng Tàu, Tây và Tây Nam giáp tỉnh Long An và Tiền Giang.
+Thành phố Hồ Chí Minh cách thủ đô Hà Nội gần 1.730km đường bộ, nằm ở ngã tư quốc tế giữa các con đường hàng hải từ Bắc xuống Nam, từ Ðông sang Tây, là tâm điểm của khu vực Đông Nam Á. Trung tâm thành phố cách bờ biển Đông 50 km đường chim bay. Đây là đầu mối giao thông nối liền các tỉnh trong vùng và là cửa ngõ quốc tế . Với hệ thống cảng và sân bay lớn nhất cả nước, cảng Sài Gòn với năng lực hoạt động 10 triệu tấn /năm. Sân bay quốc tế Tân Sơn Nhất với hàng chục đường bay chỉ cách trung tâm thành phố 7km.
+Sài Gòn cổ xưa được thành lập từ năm 1623, nhưng tới năm 1698, Chúa Nguyễn mới cử Thống soái Nguyễn Hữu Cảnh vào kinh lược đất Phương Nam, khai sinh ra thành phố Sài Gòn. Năm 1911, Sài Gòn là nơi Chủ tịch Hồ Chí Minh vĩ đại ra đi tìm đường cứu nước, khi đất nước thống nhất, Quốc Hội khoá VI họp ngày 2.7.1976 đã chính thức đổi tên Sài Gòn là thành phố Hồ Chí Minh .
+Sài Gòn - Thành phố Hồ Chí Minh là một thành phố trẻ, với hơn 300 năm hình thành và phát triển, thành phố có rất nhiều công trình kiến trúc cổ, nhiều di tích và hệ thống bảo tàng phong phú.
+Với vị trí địa lýthuận lợi, Sài Gòn – nơi một thời được mệnh danh là Hòn ngọc Viễn Đông đã là trung tâm thương mại và là nơi hội tụ của nhiều dân tộc anh em, mỗi dân tộc có tín ngưỡng, sắc thái văn hoá riêng góp phần tạo nên một nền văn hoá đa dạng. Đặc trưng văn hoá của vùng đất này là sự kết hợp hài hòa giữa truyền thống dân tộc với những nét văn hoá phương Bắc, phương Tây, góp phần hình thành lối sống, tính cách con người Sài Gòn. Đó là những con người thẳng thắn, bộc trực, phóng khoáng, có bản lĩnh, năng động, dám nghĩ, dám làm .
+Năng động và sáng tạo, Thành phố Hồ Chí Minh luôn đi đầu cả nước trong các phong trào xã hội, nơi đầu tiên trong cả nước được công nhận hoàn thành phổ cập giáo dục trung học.
+Với vai trò đầu tàu trong đa giác chiến lược phát triển kinh tế - xã hội, thành phố Hồ Chí Minh đã trở thành trung tâm kinh tế, văn hoá - du lịch, giáo dục - khoa học kỹ thuật - y tế lớn của cả nước.
+Trong tương lai, thành phố sẽ phát triển mạnh mẽ về mọi mặt, có cơ cấu công nông nghiệp hiện đại, có văn hoá khoa học tiên tiến, một thành phố văn minh hiện đại có tầm cỡ ở khu vực Đông Nam Á.
+\n
 
-        115 là số cấp cứu y tế. Hãy gọi 115 khi liên quan đến chấn thương, bệnh tật.
+Trang web chính: http://www.hochiminhcity.gov.vn
 
-        Lưu ý rằng khi gọi các số điện thoại khẩn cấp, ta đều không cần bấm mã vùng.
-        " />
+
+Cổng Thông Tin Điện Tử thành phố Hồ Chí Minh (HCM CityWeb)\n
+Giấy phép số 117/GP-BVHTT, ngày 31/7/2006 do Bộ VH -TT cấp\n
+Cơ quan chủ quản: Ủy ban Nhân dân TP HCM;\n
+Cơ quan Thường trực mạng: Sở Thông tin và Truyền thông TP HCM \n
+Địa chỉ Tòa soạn: 59 Lý Tự Trọng, Q.1, TP HCM; Điện thoại: 38226191; Fax: 38296723\n
+Email: cityweb@tphcm.gov.vn\n"
+
+        />
+
+</LinearLayout>
+
+    </ScrollView>
+    <!-- TODO: Update blank fragment layout -->
+
 
 </FrameLayout>
