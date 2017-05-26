@@ -26,6 +26,19 @@ public class Database {
         return  l;
     }
 
+    public static Landmark getLandmark(Context context, int id){
+        if (l==null){
+            SQLiteLandmark sqlitelm = new SQLiteLandmark(context);
+            l = sqlitelm.getListLandmark();
+        }
+        for (int i = 0; i < l.size(); i++) {
+            if(l.get(i).ID==id)
+                return l.get(i);
+        }
+
+        return  l.get(1);
+    }
+
     public static ArrayList<Landmark> getFavouriteLandmark(Context context) {
         ArrayList<Landmark> fav = new ArrayList<>();
 

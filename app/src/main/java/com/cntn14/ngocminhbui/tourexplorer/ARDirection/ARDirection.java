@@ -78,6 +78,8 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ardirection);
+
+
         LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         boolean network_enabled = locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
