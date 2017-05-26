@@ -9,9 +9,11 @@ public class Utility {
     public int type;
     public String displaytext;
     public String content;
-    public Utility(int type, String displaytext, String content) {
+    public int iconid;
+    public Utility(int type, String displaytext, String content, int iconid) {
         this.type=type;
         this.displaytext=displaytext;
         this.content=content;
+        this.iconid=iconid;
     }
 }

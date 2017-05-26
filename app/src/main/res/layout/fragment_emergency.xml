@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cntn14.ngocminhbui.tourexplorer.Fragment.EmergencyFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Taxi
+TP. HCM có những hãng Taxi như Taxi Mai Linh (08.38 38 38 38), Taxi VinaSun (08.38 27 27 27) có thể dễ dàng gọi tổng đài hoặc tại những địa điểm du lịch, trung tâm thương mại.
+
+Xe buýt
+
+Hệ thống xe buýt ở TP. HCM hoạt động rộng khắp các ngả đường với khoảng 120 tuyến nội thành và gần 20 tuyến liên tỉnh đi các địa bàn lân cận như Đồng Nai, Bình Dương, Tây Ninh, Vũng Tàu từ 5h30 sáng đến 5h30 chiều, riêng một số tuyến hoạt động đến 9h30 tối. Xe thường tập trung ở các Bến xe Bến Thành (đường Hàm Nghi, Q.1), Bến xe Chợ Lớn (số 86, Trang Tử, Q.5), Bến xe Miền Đông, Bến xe Miền Tây, Bến xe An Sương, Bến xe Củ Chi (AH1, Thị trấn Củ Chi, H. Củ Chi), Bến xe Quận 8 (397 QL 50, 5, 8, TP. HCM)…Xe buýt nội thành được trợ giá với cước phí 5.000 đồng, 6.000 đồng, 7.000 đồng một lượt. Xe buýt liên tỉnh không trợ giá, cước phí được tính theo km, dao động từ 7.000-25.000 đồng/người/lượt.
+
+Xích lô
+
+Xích lô ở TP. HCM hiện hoạt động theo nhóm, đội, thường do các công ty du lịch kết hợp quản lý theo tour. Tuy nhiên, du khách vẫn có thể tìm thấy xích lô ở các khu gần chợ Bến Thành, khu du lịch, bảo tàng…Xe thường có mái che, biển số xe đầy đủ. Nếu gặp vấn đề gì, du khách nên liên hệ Lực lượng hỗ trợ du khách ở số điện thoại 08.39 250 000.
+
+
+Xe ôm
+
+Xe ôm thường hoạt động nhiều và theo nhóm ở các Bến xe Miền Đông, Miền Tây, Ga Sài Gòn, tuy nhiên, chưa có đội ngũ quản lý chính thức cho loại hình này. Ngoài ra, du khách có thể bắt gặp xe ôm hoạt động đơn lẻ gần chợ, tại các ngã ba, ngã tư đường…" />
+
+</FrameLayout>

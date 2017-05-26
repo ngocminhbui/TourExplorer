@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "605012918035",
+    "firebase_url": "https://fir-dulichthanhpho.firebaseio.com",
+    "project_id": "firebase-dulichthanhpho",
+    "storage_bucket": "firebase-dulichthanhpho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605012918035:android:18a6f26282707281",
+        "android_client_info": {
+          "package_name": "com.cntn14.ngocminhbui.tourexplorer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605012918035-f6vtt54brkdcu98r1pb3d0s9e9fn255j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbs1ObCj05O4UYnYRNrlaVAAFGjkuu_bw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

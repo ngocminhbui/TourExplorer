@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cntn14.ngocminhbui.tourexplorer.Fragment.OverViewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="113 là số điện thoại của lực lượng cảnh sát phản ứng nhanh. Hãy gọi 113 khi xảy ra tai nạn giao thông, các vụ việc có yếu tố tội phạm, vi phạm trật tự an toàn xã hội, cướp giật, đánh nhau, bạo hành...
+
+        114 là số điện thoại cho khẩn chữa cháy hay khi cần cứu hộ cứu nạn. Hãy gọi 114 khi xảy ra bất kỳ sự cố nào liên quan đến cháy nổ, đuối nước, sập nhà, kẹt thang máy...
+
+        115 là số cấp cứu y tế. Hãy gọi 115 khi liên quan đến chấn thương, bệnh tật.
+
+        Lưu ý rằng khi gọi các số điện thoại khẩn cấp, ta đều không cần bấm mã vùng.
+        " />
+
+</FrameLayout>

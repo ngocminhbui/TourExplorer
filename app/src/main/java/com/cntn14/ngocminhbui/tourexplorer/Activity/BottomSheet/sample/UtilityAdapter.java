@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
+import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.RecyclerView;
@@ -21,7 +22,7 @@ import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import java.util.Random;
 /**
  * Created by ngocminh on 5/24/17.
  */
@@ -42,17 +43,25 @@ public class UtilityAdapter extends RecyclerView.Adapter<UtilityAdapter.ViewHold
 
     }
 
+    final int color[] = {R.color.event_color_01, R.color.event_color_02, R.color.event_color_03, R.color.event_color_04};
+
     @Override
     public void onBindViewHolder(UtilityAdapter.ViewHolder holder, int position) {
         final Utility u = utilities.get(position);
+
+        GradientDrawable bgShape = (GradientDrawable)holder.bt_utilityitem.getBackground();
+
+
         holder.tv_utilityitem_action.setText(u.displaytext);
 
         Resources resources = context.getResources();
 
-        holder.bt_utilityitem.setCompoundDrawablesWithIntrinsicBounds(null, resources.getDrawable(R.drawable.ic_deskphone) ,null,null);
+        bgShape.setColor(resources.getColor(color[position%4]));
+
+
+        holder.bt_utilityitem.setCompoundDrawablesWithIntrinsicBounds(null, resources.getDrawable( UtilityIcon.ARRAY_ICON[u.iconid] ) ,null,null);
 
         if(u.type==UtilityType.PHONE){
-            holder.bt_utilityitem.setCompoundDrawablesWithIntrinsicBounds(null, resources.getDrawable(R.drawable.ic_deskphone) ,null,null);
             holder.bt_utilityitem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -71,7 +80,6 @@ public class UtilityAdapter extends RecyclerView.Adapter<UtilityAdapter.ViewHold
                 }
             });
         }else if(u.type==UtilityType.WEB){
-            holder.bt_utilityitem.setCompoundDrawablesWithIntrinsicBounds(null, resources.getDrawable(R.drawable.ic_web) ,null,null);
             holder.bt_utilityitem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -82,7 +90,6 @@ public class UtilityAdapter extends RecyclerView.Adapter<UtilityAdapter.ViewHold
                 }
             });
         }else if(u.type==UtilityType.MAP){
-            holder.bt_utilityitem.setCompoundDrawablesWithIntrinsicBounds(null, resources.getDrawable(R.drawable.ic_ggmap) ,null,null);
             holder.bt_utilityitem.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

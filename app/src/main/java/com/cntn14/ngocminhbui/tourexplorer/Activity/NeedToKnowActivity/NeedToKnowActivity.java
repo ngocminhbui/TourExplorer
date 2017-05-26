@@ -9,6 +9,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.CurrencyFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.EmergencyFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.NetworkFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.OverViewFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Fragment.TransportationFragment;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
 import java.util.ArrayList;
@@ -38,11 +43,11 @@ public class NeedToKnowActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new NeedToKnowFragment(), "Tổng quan");
-        adapter.addFragment(new NeedToKnowFragment(), "Khẩn cấp");
-        adapter.addFragment(new NeedToKnowFragment(), "Tiền tệ");
-        adapter.addFragment(new NeedToKnowFragment(), "Mạng di động");
-        adapter.addFragment(new NeedToKnowFragment(), "Phương tiện");
+        adapter.addFragment(new OverViewFragment(), "Tổng quan");
+        adapter.addFragment(new EmergencyFragment(), "Khẩn cấp");
+        adapter.addFragment(new CurrencyFragment(), "Tiền tệ");
+        adapter.addFragment(new NetworkFragment(), "Mạng di động");
+        adapter.addFragment(new TransportationFragment(), "Phương tiện");
         viewPager.setAdapter(adapter);
     }
 

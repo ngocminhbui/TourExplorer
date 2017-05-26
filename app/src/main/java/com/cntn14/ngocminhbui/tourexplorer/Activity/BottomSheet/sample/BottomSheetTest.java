@@ -3,7 +3,6 @@ package com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample;
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -17,7 +16,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
@@ -26,21 +24,17 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import java.util.Random;
 
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.alamkanak.weekview.WeekViewEvent;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.bumptech.glide.util.Util;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.BottomSheetBehaviorGoogleMapsLike;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.MergedAppBarLayoutBehavior;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.SlideshowDialogFragment;
@@ -227,13 +221,10 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
     }
 
     private void fetchUtility(Landmark landmark, final ArrayList<Utility> utilities) {
-        final Utility utilityPhone = new Utility(UtilityType.PHONE,"Gọi điện", landmark.Phone);
-        final Utility utilityWeb = new Utility(UtilityType.WEB, "Trang chủ", landmark.Url);
-        final Utility utilityMap = new Utility(UtilityType.MAP, "Bản đồ", landmark.LatLng.toString());
-        final Utility utility1080 = new Utility(UtilityType.PHONE, "Tra cứu", "08 1080");
-
-
-
+        final Utility utilityPhone = new Utility(UtilityType.PHONE,"Gọi điện", landmark.Phone, 7);
+        final Utility utilityWeb = new Utility(UtilityType.WEB, "Trang chủ", landmark.Url, 8);
+        final Utility utilityMap = new Utility(UtilityType.MAP, "Bản đồ", landmark.LatLng.toString(), 9);
+        final Utility utility1080 = new Utility(UtilityType.PHONE, "Tra cứu", "08 1080", 7);
 
         JsonObjectRequest req = new JsonObjectRequest(landmark.UtilityJSON,
                 new Response.Listener<JSONObject>() {
@@ -256,7 +247,12 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
                                 JSONObject object = services.getJSONObject(i);
 
 
-                                Utility s = new Utility(UtilityType.WEB, object.getString("type"), object.getString("url"));
+                                int iconid = object.getInt("icon_id");
+                                String type = object.getString("type");
+                                String content = object.getString("content");
+                                int intentType = object.getInt("id");
+
+                                Utility s = new Utility(intentType, type, content, iconid);
 
 
                                 utilities.add(s);

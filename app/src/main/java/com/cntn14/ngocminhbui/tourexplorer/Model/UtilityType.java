@@ -5,6 +5,6 @@ package com.cntn14.ngocminhbui.tourexplorer.Model;
  */
 public class UtilityType {
     public static final int WEB = 1;
-    public static int PHONE = 0;
-    public static int MAP = 2;
+    public static int PHONE = 2;
+    public static int MAP = 3;
 }
