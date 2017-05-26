@@ -26,6 +26,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.BottomSheetTest;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.ListMapLandMarkAdapter;
+import com.cntn14.ngocminhbui.tourexplorer.Helper.GPSHelper;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinder;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinderListener;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.Route;
@@ -165,8 +166,7 @@ public class ViewAllLandmarkActivity extends AppCompatActivity implements OnMapR
             // for ActivityCompat#requestPermissions for more details.
             return;
         }
-        Location location = locationManager.getLastKnownLocation(locationManager
-                .getBestProvider(criteria, false));
+        Location location = GPSHelper.getGPS(this);
 
         double latitude = location.getLatitude();
         double longitude = location.getLongitude();
@@ -177,7 +177,7 @@ public class ViewAllLandmarkActivity extends AppCompatActivity implements OnMapR
         if (start.isEmpty() || end.isEmpty()){
             Toast.makeText(getApplicationContext(),"fill", Toast.LENGTH_LONG).show();
         }
-        try{
+        try{]]
             new DirectionFinder(onDirectionFinished,start,end).execute();
 
         }catch (Exception e) {

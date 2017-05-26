@@ -133,6 +133,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:text="Đang mở"
+                            android:id="@+id/tv_activity_landmarkopenstatus"
                             android:textColor="@color/green"/>
 
                     </LinearLayout>

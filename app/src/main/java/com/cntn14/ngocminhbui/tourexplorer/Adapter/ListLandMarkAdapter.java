@@ -75,6 +75,7 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
 
 
 
+
         Glide.with(context).load(lm.ImageURL)
                 .thumbnail(0.5f)
                 .crossFade()
@@ -115,12 +116,14 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView tv_activity_landmark_name,tv_activity_landmark_description,tv_activity_landmarkhour,tv_activity_landmarkdistance;
+        public TextView tv_activity_landmark_name,tv_activity_landmark_description,tv_activity_landmarkhour,tv_activity_landmarkdistance, tv_activity_landmarkopenstatus;
         public ImageView iv_activity_landmarkimg;
         public ImageButton ib_activity_seemore;
         public RatingBar rb_activity_landmarkscore;
         public ImageButton ib_activity_showdetail;
         public MaterialFavoriteButton mfb_activity_landmark_favourite;
+
+
         public ViewHolder(View itemView) {
             super(itemView);
             tv_activity_landmark_name = (TextView) itemView.findViewById(R.id.tv_activity_landmarkname);
@@ -133,6 +136,7 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
             ib_activity_showdetail = (ImageButton)itemView.findViewById(R.id.ib_activity_showdetail);
             tv_activity_landmark_description.setVisibility(View.GONE);
             mfb_activity_landmark_favourite = (MaterialFavoriteButton)itemView.findViewById(R.id.mfb_activity_landmark_favourite);
+            tv_activity_landmarkopenstatus = (TextView)itemView.findViewById(R.id.tv_activity_landmarkopenstatus);
         }
     }
 }
