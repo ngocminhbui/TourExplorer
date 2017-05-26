@@ -1,4 +1,5 @@
 package   com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner;
+import android.content.Intent;
 import android.graphics.RectF;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import com.alamkanak.weekview.DateTimeInterpreter;
 import com.alamkanak.weekview.MonthLoader;
 import com.alamkanak.weekview.WeekView;
 import com.alamkanak.weekview.WeekViewEvent;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.BottomSheetTest;
+import com.cntn14.ngocminhbui.tourexplorer.Adapter.ListLandMarkAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
 import java.text.SimpleDateFormat;
@@ -147,7 +150,11 @@ public abstract class ViewCalendarBaseActivity extends AppCompatActivity impleme
 
     @Override
     public void onEventClick(WeekViewEvent event, RectF eventRect) {
-        Toast.makeText(this, "Clicked " + event.getName(), Toast.LENGTH_SHORT).show();
+        MyWeekViewEvent e = (MyWeekViewEvent)event;
+        BottomSheetTest.landmark=e.mLandmark;
+        Intent intent = new Intent(this, BottomSheetTest.class);
+        this.startActivity(intent);
+
     }
 
     @Override

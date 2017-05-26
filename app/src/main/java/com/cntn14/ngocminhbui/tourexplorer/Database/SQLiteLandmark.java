@@ -25,7 +25,7 @@ public class SQLiteLandmark extends SQLiteDataController {
             Landmark lopHoc;
             while (cs.moveToNext()) {
 
-                Landmark lm = new Landmark( cs.getInt(0), cs.getString(1), cs.getString(2),cs.getString(3), cs.getDouble(4), cs.getDouble(5), cs.getString(6), cs.getString(7), cs.getString(8), cs.getString(9), cs.getString(10),cs.getString(11),"dont have");
+                Landmark lm = new Landmark( cs.getInt(0), cs.getString(1), cs.getString(2),cs.getString(3), cs.getDouble(4), cs.getDouble(5), cs.getString(6), cs.getString(7), cs.getString(8), cs.getString(9), cs.getString(10),cs.getString(11),cs.getString(12));
 
                 listlm.add(lm);
             }
@@ -37,5 +37,29 @@ public class SQLiteLandmark extends SQLiteDataController {
             close();
         }
         return  listlm;
+    }
+
+    public Landmark getLandmark(int ID) {
+        ArrayList<Landmark> listlm = new ArrayList<>();
+        try {
+
+            openDataBase();
+            Cursor cs = database.rawQuery("select * from Landmark where id = " + String.valueOf(ID), null);
+            while (cs.moveToNext()) {
+
+                Landmark lm = new Landmark(cs.getInt(0), cs.getString(1), cs.getString(2), cs.getString(3), cs.getDouble(4), cs.getDouble(5), cs.getString(6), cs.getString(7), cs.getString(8), cs.getString(9), cs.getString(10), cs.getString(11), cs.getString(12));
+
+                listlm.add(lm);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+
+            close();
+        }
+        if (listlm.size()==0){
+            return  null;
+        }else
+            return listlm.get(0);
     }
 }

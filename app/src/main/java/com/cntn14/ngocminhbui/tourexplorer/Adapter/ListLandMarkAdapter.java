@@ -92,6 +92,8 @@ public class ListLandMarkAdapter extends RecyclerView.Adapter<ListLandMarkAdapte
                 BottomSheetTest.landmark=ListLandMarkAdapter.this.list_landmark.get(position);
                 Intent intent = new Intent(context, BottomSheetTest.class);
                 context.startActivity(intent);
+
+
             }
         });
 

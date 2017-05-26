@@ -24,6 +24,8 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import java.util.Random;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -33,15 +35,19 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alamkanak.weekview.WeekViewEvent;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.bumptech.glide.util.Util;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.BottomSheetBehaviorGoogleMapsLike;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.lib.MergedAppBarLayoutBehavior;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.SlideshowDialogFragment;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.TripPlanner.MyWeekViewEvent;
 import com.cntn14.ngocminhbui.tourexplorer.Adapter.GalleryAdapter;
 import com.cntn14.ngocminhbui.tourexplorer.AppController;
+import com.cntn14.ngocminhbui.tourexplorer.Database.SQLiteWeekSchedule;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinder;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.DirectionFinderListener;
 import com.cntn14.ngocminhbui.tourexplorer.Interface.Route;
@@ -67,6 +73,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -219,17 +226,62 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
         Binding();
     }
 
-    private void fetchUtility(Landmark landmark, ArrayList<Utility> utilities) {
-        Utility utilityPhone = new Utility(UtilityType.PHONE,"Gọi điện", landmark.Phone);
-        Utility utilityWeb = new Utility(UtilityType.WEB, "Trang chủ", landmark.Url);
-        Utility utilityMap = new Utility(UtilityType.MAP, "Bản đồ", landmark.LatLng.toString());
-        Utility utility1080 = new Utility(UtilityType.PHONE, "Tra cứu", "08 1080");
+    private void fetchUtility(Landmark landmark, final ArrayList<Utility> utilities) {
+        final Utility utilityPhone = new Utility(UtilityType.PHONE,"Gọi điện", landmark.Phone);
+        final Utility utilityWeb = new Utility(UtilityType.WEB, "Trang chủ", landmark.Url);
+        final Utility utilityMap = new Utility(UtilityType.MAP, "Bản đồ", landmark.LatLng.toString());
+        final Utility utility1080 = new Utility(UtilityType.PHONE, "Tra cứu", "08 1080");
 
 
-        utilities.add(utilityPhone);
-        utilities.add(utilityWeb);
-        utilities.add(utilityMap);
-        utilities.add(utility1080);
+
+
+        JsonObjectRequest req = new JsonObjectRequest(landmark.UtilityJSON,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Log.d(TAG, response.toString());
+                        pDialog.hide();
+
+
+                        utilities.clear();
+                        utilities.add(utilityPhone);
+                        utilities.add(utilityWeb);
+                        utilities.add(utilityMap);
+                        utilities.add(utility1080);
+
+                        try {
+                            JSONArray services = response.getJSONArray("service");
+                            for (int i = 0; i < services.length(); i++) {
+
+                                JSONObject object = services.getJSONObject(i);
+
+
+                                Utility s = new Utility(UtilityType.WEB, object.getString("type"), object.getString("url"));
+
+
+                                utilities.add(s);
+
+                            }
+
+                        }
+                        catch (JSONException e) {
+                            Log.e(TAG, "Json parsing error: " + e.getMessage());
+                        }
+
+
+                        utilityAdapter.notifyDataSetChanged();
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e(TAG, "Error: " + error.getMessage());
+                pDialog.hide();
+            }
+        });
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(req);
+
 
         utilityAdapter.notifyDataSetChanged();
 
@@ -359,11 +411,26 @@ public class BottomSheetTest extends AppCompatActivity implements OnMapReadyCall
             }
         });
 
-
+        final int color[] = {R.color.event_color_01, R.color.event_color_02, R.color.event_color_03, R.color.event_color_04};
         final SlideDateTimeListener dateTimeListener = new SlideDateTimeListener() {
             @Override
             public void onDateTimeSet(Date date) {
-                Toast.makeText(BottomSheetTest.this,"DI",Toast.LENGTH_SHORT).show();
+                MyWeekViewEvent e = new MyWeekViewEvent();
+                e.setName(landmark.Name);
+                Calendar startTime = Calendar.getInstance();
+                startTime.setTime(date);
+                Calendar endTime = (Calendar) startTime.clone();
+                endTime.add(Calendar.HOUR_OF_DAY, 2);
+
+
+                e.setStartTime(startTime);
+                e.setEndTime(endTime);
+                Random ran = new Random();
+                e.setColor(color[ran.nextInt(4)]);
+                e.setId(ran.nextInt(200000));
+                e.setLocation(null);
+                e.mLandmark=landmark;
+                new SQLiteWeekSchedule(BottomSheetTest.this).create(e);
             }
         };
 
