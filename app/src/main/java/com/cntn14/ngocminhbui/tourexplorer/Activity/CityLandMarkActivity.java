@@ -35,6 +35,7 @@ import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
 import com.cntn14.ngocminhbui.tourexplorer.Fragment.ListLandmarkFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Fragment.OneFragment;
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
+import com.cntn14.ngocminhbui.tourexplorer.Places.ui.ActivityList.AboutScreen;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 
 import java.io.File;
@@ -70,10 +71,17 @@ public class CityLandMarkActivity extends AppCompatActivity {
 
             return true;
 
-    } else if (id == R.id.action_recognition) {
+    } else if (id == R.id.action_ar_direction) {
             Intent intent = new Intent(this, ARDirection.class);
             startActivity(intent);
             return true;
+    } else if (id == R.id.action_recognition) {
+            Intent intent = new Intent(this, AboutScreen.class);
+            intent.putExtra("ACTIVITY_TO_LAUNCH",
+                    "Places.app.Places.Books");
+            intent.putExtra("ABOUT_TEXT_TITLE", "Books");
+            intent.putExtra("ABOUT_TEXT", "Books/CR_about.html");
+            startActivity(intent);
     }
         return super.onOptionsItemSelected(item);
     }

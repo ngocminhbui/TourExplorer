@@ -44,7 +44,9 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 //import com.cntn14.ngocminhbui.tourexplorer.PlaceDetail.PlaceDetailActiviy;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.BottomSheetTest;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
+import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
 import com.cntn14.ngocminhbui.tourexplorer.R;
 import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationControl;
 import com.cntn14.ngocminhbui.tourexplorer.SampleApplication.SampleApplicationException;
@@ -83,7 +85,7 @@ public class Books extends Activity implements SampleApplicationControl
 
     // Defines the Server URL to get the books data
 //    private static final String mServerURL = "https://developer.vuforia.com/samples/cloudreco/json/";
-    private static final String mServerURL = "https://dotrongle.github.io/places_info/";
+    private static final String mServerURL = "https://dotrongle.github.io/vuforia_info/";
     // Stores the current status of the target ( if is being displayed or not )
     private static final int BOOKINFO_NOT_DISPLAYED = 0;
     private static final int BOOKINFO_IS_DISPLAYED = 1;
@@ -1117,8 +1119,8 @@ public class Books extends Activity implements SampleApplicationControl
         if (mBookData != null)
         {
             // Starts an Intent to open the book URL
-            Intent intent = new Intent(this, PlaceDetailActivity.class);
-            intent.putExtra("position", mBookData.getID() - 1);
+            BottomSheetTest.landmark= Database.getLandmark(this,mBookData.getID());
+            Intent intent = new Intent(this, BottomSheetTest.class);
             startActivity(intent);
         }
     }
