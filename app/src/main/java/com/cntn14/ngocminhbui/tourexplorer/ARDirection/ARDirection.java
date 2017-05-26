@@ -1,10 +1,17 @@
 package com.cntn14.ngocminhbui.tourexplorer.ARDirection;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageManager;
 import android.hardware.Camera;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,12 +28,16 @@ import com.cntn14.ngocminhbui.tourexplorer.ARHelper.MyCurrentAzimuth;
 import com.cntn14.ngocminhbui.tourexplorer.ARHelper.MyCurrentLocation;
 import com.cntn14.ngocminhbui.tourexplorer.ARHelper.OnAzimuthChangedListener;
 import com.cntn14.ngocminhbui.tourexplorer.ARHelper.OnLocationChangedListener;
+import com.cntn14.ngocminhbui.tourexplorer.Activity.BottomSheet.sample.BottomSheetTest;
 import com.cntn14.ngocminhbui.tourexplorer.Database.Database;
 //import com.cntn14.ngocminhbui.tourexplorer.PlaceDetail.PlaceDetailActiviy;
 import com.cntn14.ngocminhbui.tourexplorer.Activity.PlaceDetailActivity;
 
 import com.cntn14.ngocminhbui.tourexplorer.Model.Landmark;
 import com.cntn14.ngocminhbui.tourexplorer.R;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -34,6 +45,7 @@ import java.util.List;
 
 public class ARDirection extends AppCompatActivity implements SurfaceHolder.Callback, OnLocationChangedListener, OnAzimuthChangedListener {
 
+    private static final float MAX_DIST = 4500; //m
     Camera mCamera;
     SurfaceView mSurfaceView;
     SurfaceHolder mSurfaceHolder;
@@ -44,6 +56,8 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     private double mAzimuthReal = 0;
     private double mAzimuthTeoretical = 0;
     private static double AZIMUTH_ACCURACY = 30;
+//    private double mMyLatitude = 10.7533179;
+//    private double mMyLongitude = 106.6586053;
     private double mMyLatitude = 0;
     private double mMyLongitude = 0;
 
@@ -51,7 +65,9 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     private MyCurrentLocation myCurrentLocation;
 
     ArrayList<AugmentedPOI> ranges = new ArrayList<>();
+    ArrayList<AugmentedPOI> ranges_r = new ArrayList<>();
     ArrayList<Landmark> places = new ArrayList<>();
+    ArrayList<Landmark> places_r = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +78,31 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ardirection);
+        LocationManager locManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        boolean network_enabled = locManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+
+        Location location;
+
+        if (network_enabled) {
+
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
+            location = locManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+
+            if(location!=null){
+                mMyLongitude = location.getLongitude();
+                mMyLatitude = location.getLatitude();
+            }
+        }
 
         InitComponents();
         LoadData();
@@ -84,20 +125,30 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         rlRoot = (RelativeLayout) findViewById(R.id.ardir_root_layout);
     }
 
-    private void LoadData(){
+    private void LoadData() {
         places = Database.getLandmarks(this);
-        for (int i=0; i<places.size(); i++)
-        {
+        for (int i = 0; i < places.size(); i++) {
             double midAzimuth = calculateTeoreticalAzimuth(places.get(i));
             double minAzimuth = calculateAzimuthAccuracy(midAzimuth).get(0);
             double maxAzimuth = calculateAzimuthAccuracy(midAzimuth).get(0);
+
             ranges.add(new AugmentedPOI(i, midAzimuth, minAzimuth, maxAzimuth));
             Log.d(places.get(i).Name, String.valueOf(midAzimuth));
         }
     }
 
     private void InitItemLayout() {
-        for (int i=0; i<places.size(); i++) {
+        for (int i = 0; i < places.size(); i++) {
+
+            float[] dist = new float[1];
+            Location.distanceBetween(mMyLatitude, mMyLongitude,
+                    places.get(i).LatLng.latitude, places.get(i).LatLng.longitude, dist);
+            Log.d(places.get(i).Name, String.valueOf(mMyLatitude));
+            if (dist[0] > MAX_DIST) {
+                continue;
+            }
+            places_r.add(places.get(i));
+            ranges_r.add(ranges.get(i));
             View layout = LayoutInflater.from(this).inflate(R.layout.ardir_item_layout, rlRoot, false);
             RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) layout.getLayoutParams();
             params.setMargins(i * 10, i * 10, 0, 0);
@@ -117,8 +168,8 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
             layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(ARDirection.this, PlaceDetailActivity.class);
-                    intent.putExtra("position", finalI);
+                    BottomSheetTest.landmark = places.get(finalI);
+                    Intent intent = new Intent(ARDirection.this, BottomSheetTest.class);
                     startActivity(intent);
                 }
             });
@@ -127,7 +178,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     }
 
     public double calculateTeoreticalAzimuth(Landmark mlandmark) {
-        double dX = mlandmark.LatLng.latitude- mMyLatitude;
+        double dX = mlandmark.LatLng.latitude - mMyLatitude;
         double dY = mlandmark.LatLng.longitude - mMyLongitude;
 
         double phiAngle;
@@ -179,12 +230,11 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     }
 
     private void updateTeoreticalAzimuth() {
-        for (int i=0; i<places.size(); i++)
-        {
-            double midAzimuth = calculateTeoreticalAzimuth(places.get(i));
+        for (int i = 0; i < places_r.size(); i++) {
+            double midAzimuth = calculateTeoreticalAzimuth(places_r.get(i));
             double minAzimuth = calculateAzimuthAccuracy(midAzimuth).get(0);
             double maxAzimuth = calculateAzimuthAccuracy(midAzimuth).get(1);
-            AugmentedPOI r = ranges.get(i);
+            AugmentedPOI r = ranges_r.get(i);
             r.setTeoreticalAzimuth(midAzimuth);
             r.setMinRange(minAzimuth);
             r.setMaxRange(maxAzimuth);
@@ -195,30 +245,39 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
     public void onAzimuthChanged(float azimuthChangedTo) {
         mAzimuthReal = azimuthChangedTo;
 
-        for (int i=0; i<ranges.size(); i++) {
+        for (int i = 0; i < ranges_r.size(); i++) {
             View layout = infoBox.get(i);
-            if (ranges.get(i).isInside(mAzimuthReal)) {
+            if (ranges_r.get(i).isInside(mAzimuthReal)) {
 //                Log.d("Entered", places.get(i).getName());
                 Log.d("Your azimuth", String.valueOf(mAzimuthReal));
-                Log.d("Left - Right - Mid", String.valueOf(ranges.get(i).getMinRange()) + " - " + String.valueOf(ranges.get(i).getMaxRange()) + " - " + String.valueOf(ranges.get(i).getTeoreticalAzimuth()));
+                Log.d("Left - Right - Mid", String.valueOf(ranges_r.get(i).getMinRange()) + " - " + String.valueOf(ranges_r.get(i).getMaxRange()) + " - " + String.valueOf(ranges_r.get(i).getTeoreticalAzimuth()));
 
+
+                float[] dist = new float[1];
+                Location.distanceBetween(mMyLatitude, mMyLongitude,
+                        places_r.get(i).LatLng.latitude, places_r.get(i).LatLng.longitude, dist);
+
+
+                if (dist[0] > MAX_DIST) {
+                    layout.setVisibility(View.INVISIBLE);
+                    continue;
+                }
                 RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) layout.getLayoutParams();
-                double diffAngle = Math.abs(mAzimuthReal - ranges.get(i).getTeoreticalAzimuth());
+                double diffAngle = Math.abs(mAzimuthReal - ranges_r.get(i).getTeoreticalAzimuth());
                 int scrWidth = getResources().getDisplayMetrics().widthPixels;
-                int leftMar = (int) ((scrWidth / 2) / (AZIMUTH_ACCURACY-10) * diffAngle) - params.width / 2;
-                if (mAzimuthReal < ranges.get(i).getTeoreticalAzimuth())
+                int leftMar = (int) ((scrWidth / 2) / (AZIMUTH_ACCURACY - 10) * diffAngle) - params.width / 2;
+                if (mAzimuthReal < ranges_r.get(i).getTeoreticalAzimuth())
                     leftMar += scrWidth / 2;
-                else leftMar = scrWidth/2 - leftMar;
+                else leftMar = scrWidth / 2 - leftMar;
                 params.setMargins(leftMar, i * 200 + 20, -400, 0);
                 layout.setLayoutParams(params);
                 layout.setVisibility(View.VISIBLE);
 
-                float[] dist = new float[1];
-                Location.distanceBetween(mMyLatitude, mMyLongitude,
-                        places.get(i).LatLng.latitude, places.get(i).LatLng.longitude, dist);
+
                 TextView tvDistance = (TextView) layout.findViewById(R.id.tv_ardir_distance);
                 dist[0] = dist[0] / 1000;
                 tvDistance.setText(String.format("%.1f km", dist[0]));
+
             } else layout.setVisibility(View.INVISIBLE);
         }
     }
@@ -242,7 +301,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
 
     public Camera.Size getOptimalPreviewSize(List<Camera.Size> sizes, int w, int h) {
         final double ASPECT_TOLERANCE = 0.1;
-        double targetRatio=(double)h / w;
+        double targetRatio = (double) h / w;
 
         if (sizes == null) return null;
 
@@ -306,8 +365,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         try {
             mCamera = Camera.open();
             mCamera.setDisplayOrientation(90);
-        }
-        catch (RuntimeException e) {
+        } catch (RuntimeException e) {
             System.err.println(e);
             return;
         }
@@ -315,9 +373,7 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         try {
             mCamera.setPreviewDisplay(mSurfaceHolder);
             mCamera.startPreview();
-        }
-
-        catch (Exception e) {
+        } catch (Exception e) {
             System.err.println(e);
             return;
         }
@@ -335,4 +391,6 @@ public class ARDirection extends AppCompatActivity implements SurfaceHolder.Call
         mCamera.release();
         mCamera = null;
     }
+
+
 }
