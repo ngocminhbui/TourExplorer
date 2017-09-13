@@ -163,16 +163,11 @@ public class CityLandMarkActivity extends AppCompatActivity {
 
 
         adapter.addFragment(allList, "Tất cả");
-        adapter.addFragment(historicalList,"Di tích");
         adapter.addFragment(museumList, "Bảo tàng");
         adapter.addFragment(amusementList,"Giải trí");
-        adapter.addFragment(parkList, "Công viên");
-        adapter.addFragment(foodList, "Ăn uống");
         adapter.addFragment(restaurantList,"Nhà hàng");
         adapter.addFragment(hotelList, "Khách sạn");
 
-
-        adapter.addFragment(cinemaList,"Rạp Chiếu phim");
         adapter.addFragment(other, "Khác");
 
 

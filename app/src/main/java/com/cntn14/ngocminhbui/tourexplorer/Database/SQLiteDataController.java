@@ -42,7 +42,7 @@ public class SQLiteDataController extends SQLiteOpenHelper {
         // Default là đã có DB
         boolean result = true;
         //this.getReadableDatabase();
-        //copyDataBase();
+        copyDataBase();
 
         // Nếu chưa tồn tại DB thì copy từ Asses vào Data
         if (!checkExistDataBase()) {

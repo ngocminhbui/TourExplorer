@@ -85,7 +85,7 @@ public class Books extends Activity implements SampleApplicationControl
 
     // Defines the Server URL to get the books data
 //    private static final String mServerURL = "https://developer.vuforia.com/samples/cloudreco/json/";
-    private static final String mServerURL = "https://dotrongle.github.io/vuforia_info/";
+    private static final String mServerURL = "https://dotrongle.github.io/vf_TheMaykha/";
     // Stores the current status of the target ( if is being displayed or not )
     private static final int BOOKINFO_NOT_DISPLAYED = 0;
     private static final int BOOKINFO_IS_DISPLAYED = 1;
@@ -139,8 +139,8 @@ public class Books extends Activity implements SampleApplicationControl
 //    private static final String kAccessKey = "669ab267d2332a9c8f8c05730f2abd00a8c34fbd";
 //    private static final String kSecretKey = "7afac700a02bd5d68ab2b0b4dcaca982dda5a17e";
 
-    private static final String kAccessKey = "5913335ef67b0e02ec57b2a14764a4d45f50b84e";
-    private static final String kSecretKey = "ca51aa3c15bc401eb27490f1c71134e543a2878c";
+    private static final String kAccessKey = "fff335640e0f893848bb768ddd975d46aef0fc7a";
+    private static final String kSecretKey = "ba5f96817cb1a9c3b842ba7d749360bf0a48d5ea";
     // View overlays to be displayed in the Augmented View
     private RelativeLayout mUILayout;
     private TextView mStatusBar;
